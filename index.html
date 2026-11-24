@@ -1,1619 +1,944 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="id" data-theme="light">
 <head>
-
 <meta charset="utf-8">
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="description" content="evevdepot — Depot air minum isi ulang higienis di Cilandak, Jakarta Selatan. Tersedia Air Mineral Alami, Reverse Osmosis (RO), Bio-Alkali pH 8.5+, dan langganan galon kantor dengan layanan antar kilat gratis ongkir.">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>evevdepot — Depot Air Minum Isi Ulang Higienis &amp; Pesan Antar Galon Cepat</title>
 
-
-
-<title>evevdepot - Depot Air Minum Isi Ulang & Pengiriman Galon Higienis</title>
-
-
+<!-- Anti-FOUC Theme Initializer (Berjalan sebelum CSS dirender) -->
+<script>
+(function () {
+  try {
+    var root = document.documentElement;
+    root.classList.add('no-theme-transition');
+    var saved = localStorage.getItem('evev_theme') || localStorage.getItem('evevdepot_theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = (saved === 'dark' || saved === 'light') ? saved : (prefersDark ? 'dark' : 'light');
+    root.setAttribute('data-theme', theme);
+  } catch (e) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+</script>
 
 <!-- Fav Icon -->
-
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-
-
 <!-- Google Fonts -->
-
 <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 
-
-
 <!-- Stylesheets -->
-
 <link href="assets/css/font-awesome-all.css" rel="stylesheet">
-
 <link href="assets/css/flaticon.css" rel="stylesheet">
-
 <link href="assets/css/owl.css" rel="stylesheet">
-
 <link href="assets/css/bootstrap.css" rel="stylesheet">
-
 <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
-
 <link href="assets/css/animate.css" rel="stylesheet">
-
 <link href="assets/css/jquery-ui.css" rel="stylesheet">
-
 <link href="assets/css/color.css" rel="stylesheet">
-
 <link href="assets/css/style.css" rel="stylesheet">
-
 <link href="assets/css/responsive.css" rel="stylesheet">
+<link href="assets/css/theme-toggle.css" rel="stylesheet">
 
-
-
+<style>
+  /* Konsistensi proporsi foto responsif untuk Varian 1 */
+  .about-section .image-box img,
+  .chooseus-section .image-box img,
+  .cta-section .image-box img {
+    width: 100%;
+    max-height: 460px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+  .testimonial-block-one .author-thumb img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .team-block-one .image-box .image img {
+    width: 100%;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .news-block-one .image-box img {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+  }
+</style>
 </head>
-
-
-
-
-
-<!-- page wrapper -->
 
 <body>
 
-
-
     <div class="boxed_wrapper">
 
-
-
-
-
         <!-- preloader -->
-
         <div class="loader-wrap">
-
             <div class="preloader">
-
-                <div class="preloader-close">Preloader Close</div>
-
+                <div class="preloader-close">Lewati</div>
                 <div id="handle-preloader" class="handle-preloader">
-
                     <div class="animation-preloader">
-
                         <div class="spinner"></div>
-
                         <div class="txt-loading">
-
-                            <span data-text-preloader="a" class="letters-loading">
-
-                                a
-
-                            </span>
-
-                            <span data-text-preloader="c" class="letters-loading">
-
-                                c
-
-                            </span>
-
-                            <span data-text-preloader="u" class="letters-loading">
-
-                                u
-
-                            </span>
-
-                            <span data-text-preloader="a" class="letters-loading">
-
-                                a
-
-                            </span>
-
-                            <span data-text-preloader="s" class="letters-loading">
-
-                                s
-
-                            </span>
-
-                            <span data-text-preloader="a" class="letters-loading">
-
-                                a
-
-                            </span>
-
-                            <span data-text-preloader="f" class="letters-loading">
-
-                                f
-
-                            </span>
-
-                            <span data-text-preloader="e" class="letters-loading">
-
-                                e
-
-                            </span>
-
+                            <span data-text-preloader="e" class="letters-loading">e</span>
+                            <span data-text-preloader="v" class="letters-loading">v</span>
+                            <span data-text-preloader="e" class="letters-loading">e</span>
+                            <span data-text-preloader="v" class="letters-loading">v</span>
+                            <span data-text-preloader="d" class="letters-loading">d</span>
+                            <span data-text-preloader="e" class="letters-loading">e</span>
+                            <span data-text-preloader="p" class="letters-loading">p</span>
+                            <span data-text-preloader="o" class="letters-loading">o</span>
+                            <span data-text-preloader="t" class="letters-loading">t</span>
                         </div>
-
-                    </div>  
-
+                    </div>
                 </div>
-
             </div>
-
         </div>
-
         <!-- preloader end -->
 
-
-
-
-
         <!-- main header -->
-
         <header class="main-header">
-
             <!-- header-lower -->
-
             <div class="header-lower">
-
                 <div class="shape" style="background-image: url(assets/images/shape/shape-1.png);"></div>
-
                 <div class="outer-box">
-
                     <div class="logo-box">
-
-                        <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
-
+                        <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Logo evevdepot Depot Air Minum Isi Ulang" style="object-fit: contain;"></a></figure>
                     </div>
-
                     <div class="menu-area clearfix">
-
                         <!--Mobile Navigation Toggler-->
-
-                        <div class="mobile-nav-toggler">
-
+                        <div class="mobile-nav-toggler" aria-label="Buka Menu Navigasi">
                             <i class="icon-bar"></i>
-
                             <i class="icon-bar"></i>
-
                             <i class="icon-bar"></i>
-
                         </div>
-
                         <nav class="main-menu navbar-expand-md navbar-light">
-
                             <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-
                                 <ul class="navigation clearfix">
                                     <li class="current dropdown"><a href="index.html">Beranda</a>
                                         <ul>
-                                            <li><a href="template-1.html">Template 1: Depot & Pengiriman Rumah</a></li>
-                                            <li><a href="template-2.html">Template 2: Suplai B2B & Kantor</a></li>
-                                            <li><a href="template-3.html">Template 3: Air Sehat Alkali & Uji Lab</a></li>
+                                            <li><a href="template-1.html">Template 1: Depot &amp; Pengiriman Rumah</a></li>
+                                            <li><a href="template-2.html">Template 2: Suplai B2B &amp; Kantor</a></li>
+                                            <li><a href="template-3.html">Template 3: Air Sehat Alkali &amp; Uji Lab</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#layanan">Layanan</a></li> 
-                                    <li><a href="#tentang">Tentang Kami</a></li> 
-                                    <li><a href="#produk">Produk & Harga</a></li> 
-                                    <li><a href="#keunggulan">Keunggulan</a></li> 
-                                    <li><a href="#testimoni">Ulasan</a></li>  
-                                    <li><a href="#kontak">Kontak</a></li>   
+                                    <li><a href="#layanan">Layanan</a></li>
+                                    <li><a href="#tentang">Tentang Kami</a></li>
+                                    <li><a href="#produk">Produk &amp; Harga</a></li>
+                                    <li><a href="#keunggulan">Keunggulan</a></li>
+                                    <li><a href="#testimoni">Ulasan</a></li>
+                                    <li><a href="#kontak">Kontak</a></li>
                                 </ul>
                             </div>
                         </nav>
-
                     </div>
-
                     <ul class="nav-right">
-
                         <li class="search-box-outer">
-
                             <div class="dropdown">
-
-                                <button class="search-box-btn" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-search"></i></button>
-
+                                <button class="search-box-btn" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Cari Produk"><i class="far fa-search"></i></button>
                                 <div class="dropdown-menu search-panel" aria-labelledby="dropdownMenu3">
-
                                     <div class="form-container">
-
-                                        <form action="#" onsubmit="event.preventDefault();" class="search-form">
-
+                                        <form action="#" class="search-form">
                                             <div class="form-group">
-
-                                                <input type="search" name="search-field" value="" placeholder="Search...." required="">
-
-                                                <button type="submit" class="search-btn"><span class="fas fa-search"></span></button>
-
+                                                <input type="search" name="search-field" value="" placeholder="Cari air mineral, RO, alkali..." required="">
+                                                <button type="submit" class="search-btn" aria-label="Mulai Pencarian"><span class="fas fa-search"></span></button>
                                             </div>
-
                                         </form>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </li>
-
                         <li class="cart-box">
-
-                            <a href="#produk"><i class="fal fa-shopping-cart"></i><span>3</span></a>
-
+                            <a href="#produk" aria-label="Lihat 6 Pilihan Paket Air Galon"><i class="fal fa-shopping-cart"></i><span>6</span></a>
                         </li>
-
                         <li class="btn-box">
-
-                            <a href="https://wa.me/62895323418658?text=Halo%20evevdepot,%20saya%20mau%20pesan%20galon" class="theme-btn btn-one" target="_blank"><i class="fab fa-whatsapp mr-1"></i> Pesan via WA</a>
-
+                            <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20antar%20air%20galon." data-wa-paket="Isi Ulang Air Galon 19L" class="theme-btn btn-one" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp mr-1"></i> Pesan via WA</a>
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
-
-
 
             <!--sticky Header-->
-
             <div class="sticky-header">
-
                 <div class="outer-box">
-
                     <div class="logo-box">
-
-                        <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
-
+                        <figure class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="Logo evevdepot Sticky Header" style="object-fit: contain;"></a></figure>
                     </div>
-
                     <div class="menu-area clearfix">
-
                         <nav class="main-menu clearfix">
-
-                            <!--Keep This Empty / Menu will come through Javascript-->
-
+                            <!--Menu otomatis diisi oleh script.js-->
                         </nav>
-
                     </div>
-
                     <ul class="nav-right">
-
                         <li class="search-box-outer">
-
                             <div class="dropdown">
-
-                                <button class="search-box-btn" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-search"></i></button>
-
+                                <button class="search-box-btn" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Cari Produk"><i class="far fa-search"></i></button>
                                 <div class="dropdown-menu search-panel" aria-labelledby="dropdownMenu4">
-
                                     <div class="form-container">
-
-                                        <form action="#" onsubmit="event.preventDefault();" class="search-form">
-
+                                        <form action="#" class="search-form">
                                             <div class="form-group">
-
-                                                <input type="search" name="search-field" value="" placeholder="Search...." required="">
-
-                                                <button type="submit" class="search-btn"><span class="fas fa-search"></span></button>
-
+                                                <input type="search" name="search-field" value="" placeholder="Cari air mineral, RO, alkali..." required="">
+                                                <button type="submit" class="search-btn" aria-label="Mulai Pencarian"><span class="fas fa-search"></span></button>
                                             </div>
-
                                         </form>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </li>
-
                         <li class="cart-box">
-
-                            <a href="#produk"><i class="fal fa-shopping-cart"></i><span>3</span></a>
-
+                            <a href="#produk" aria-label="Lihat 6 Pilihan Paket Air Galon"><i class="fal fa-shopping-cart"></i><span>6</span></a>
                         </li>
-
                         <li class="btn-box">
-
-                            <a href="https://wa.me/62895323418658?text=Halo%20evevdepot,%20saya%20mau%20pesan%20galon" class="theme-btn btn-one" target="_blank"><i class="fab fa-whatsapp mr-1"></i> Pesan via WA</a>
-
+                            <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20antar%20air%20galon." data-wa-paket="Isi Ulang Air Galon 19L" class="theme-btn btn-one" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp mr-1"></i> Pesan via WA</a>
                         </li>
-
                     </ul>
-
                 </div>
-
             </div>
-
         </header>
-
         <!-- main-header end -->
 
-
-
-        <!-- Mobile Menu  -->
-
+        <!-- Mobile Menu -->
         <div class="mobile-menu">
-
             <div class="menu-backdrop"></div>
-
             <div class="close-btn"><i class="fas fa-times"></i></div>
 
-            
-
             <nav class="menu-box">
-
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div>
-
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="Logo evevdepot Mobile" title="evevdepot" style="object-fit: contain;"></a></div>
+                <div class="menu-outer"><!--Menu otomatis diisi oleh script.js--></div>
                 <div class="contact-info">
                     <h4>Informasi Layanan</h4>
                     <ul>
-                        <li>Jl. Melati Raya No. 18, Cilandak, Jakarta Selatan 12430</li>
-                        <li><a href="https://wa.me/62895323418658">0895-3234-18658<br><span style="font-size:13px;color:#aaa;">evevdigital@gmail.com</span></a></li>
-                        <li><a href="mailto:kontak@evevdigital.com">kontak@evevdigital.com</a></li>
+                        <li data-config="alamat">Jl. Melati Raya No. 18, Cilandak, Jakarta Selatan 12430</li>
+                        <li><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" data-config="whatsappDisplay">+62 895-3234-18658</a></li>
+                        <li><a href="mailto:kontak@evevdigital.com" data-config="email">kontak@evevdigital.com</a></li>
                     </ul>
                 </div>
-
                 <div class="social-links">
-
                     <ul class="clearfix">
-
-                        <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
-
-                        <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
-
-                        <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
-
-                        <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
-
-                        <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
-
+                        <li><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp evevdepot"><span class="fab fa-whatsapp"></span></a></li>
+                        <li><a href="#kontak" aria-label="Facebook evevdepot"><span class="fab fa-facebook-square"></span></a></li>
+                        <li><a href="#kontak" aria-label="Instagram evevdepot"><span class="fab fa-instagram"></span></a></li>
                     </ul>
-
                 </div>
-
             </nav>
-
-        </div><!-- End Mobile Menu -->
-
-
-
-
+        </div>
+        <!-- End Mobile Menu -->
 
         <!-- banner-section -->
-
         <section class="banner-section">
-
             <div class="shape" style="background-image: url(assets/images/shape/banner-shap.png);"></div>
-
             <div class="banner-carousel owl-theme owl-carousel owl-nav-none owl-dots-none">
-
                 <div class="slide-item">
-
                     <div class="pattern-box">
-
                         <div class="pattern-1"></div>
-
                         <div class="pattern-2"></div>
-
                         <div class="pattern-3" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-
                     </div>
-
                     <div class="auto-container">
-
                         <div class="inner-box">
-
                             <div class="image-box">
-
-                                <figure class="image image-1"><img src="assets/images/banner/vector-1.png" alt=""></figure>
-
-                                <figure class="image image-2"><img src="assets/images/banner/vector-2.png" alt=""></figure>
-
+                                <figure class="image image-1"><img src="assets/images/banner/vector-1.png" alt="Ilustrasi galon air minum higienis evevdepot" style="object-fit: contain;"></figure>
+                                <figure class="image image-2"><img src="assets/images/banner/vector-2.png" alt="Percikan air murni segar evevdepot" style="object-fit: contain;"></figure>
                             </div>
-
                             <div class="content-box">
-                                <h2>Air Galon Segar, Murni &amp; Higienis untuk Keluarga</h2>
-                                <p>Depot air minum modern dengan filtrasi multi-tahap, sterilisasi ozon &amp; UV sterilizer. Lulus uji lab Dinkes untuk hidrasi harian yang aman.</p>
+                                <h2>Air Galon Murni, Segar &amp; Higienis untuk Keluarga Tercinta</h2>
+                                <p>Diproses lewat 5 tahap filtrasi food-grade, sterilisasi UV &amp; ozon, serta lulus uji laboratorium Dinkes. Bebas bau, bebas kaporit, siap antar langsung ke depan pintu rumah Anda.</p>
                                 <div class="btn-box clearfix">
-                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot,%20saya%20mau%20pesan%20galon" class="theme-btn btn-one" target="_blank">Pesan Sekarang</a>
-                                    <a href="#layanan" class="theme-btn banner-btn">Lihat Layanan</a>
+                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20isi%20ulang%20air%20galon." data-wa-paket="Isi Ulang Air Galon 19L" class="theme-btn btn-one" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp mr-1"></i> Pesan Antar Sekarang</a>
+                                    <a href="#produk" class="theme-btn banner-btn">Lihat Daftar Harga</a>
                                 </div>
                             </div>
-
-                        </div> 
-
+                        </div>
                     </div>
-
                 </div>
-
                 <div class="slide-item">
-
                     <div class="pattern-box">
-
                         <div class="pattern-1"></div>
-
                         <div class="pattern-2"></div>
-
                         <div class="pattern-3" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-
                     </div>
-
                     <div class="auto-container">
-
                         <div class="inner-box">
-
                             <div class="image-box">
-
-                                <figure class="image image-1"><img src="assets/images/banner/vector-1.png" alt=""></figure>
-
-                                <figure class="image image-2"><img src="assets/images/banner/vector-2.png" alt=""></figure>
-
+                                <figure class="image image-1"><img src="assets/images/banner/vector-1.png" alt="Layanan pesan antar galon cepat Cilandak Jakarta Selatan" loading="lazy" style="object-fit: contain;"></figure>
+                                <figure class="image image-2"><img src="assets/images/banner/vector-2.png" alt="Kemurnian air minum siap konsumsi evevdepot" loading="lazy" style="object-fit: contain;"></figure>
                             </div>
-
                             <div class="content-box">
-                                <h2>Layanan Antar Kilat Langsung ke Rumah &amp; Ruko Anda</h2>
-                                <p>Kurir sigap dan profesional mengantarkan galon air mineral dan RO langsung ke pintu Anda. Buka setiap hari mulai pukul 06:30 WIB.</p>
+                                <h2>Antar Kilat 15–30 Menit &amp; Gratis Ongkir ke Rumah maupun Kantor</h2>
+                                <p>Tak perlu repot angkat galon berat. Kurir sigap evevdepot siap bantu pasangkan langsung ke dispenser Anda. Buka setiap hari mulai pukul 06:30 hingga 21:00 WIB.</p>
                                 <div class="btn-box clearfix">
-                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot,%20saya%20butuh%20pasokan%20air%20galon" class="theme-btn btn-one" target="_blank">Hubungi WhatsApp</a>
-                                    <a href="#produk" class="theme-btn banner-btn">Daftar Harga</a>
+                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20butuh%20antar%20kilat%20air%20galon." data-wa-paket="Antar Kilat Galon Rumah / Ruko" class="theme-btn btn-one" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp mr-1"></i> Hubungi Kurir WA</a>
+                                    <a href="#layanan" class="theme-btn banner-btn">Cek Area Layanan</a>
                                 </div>
                             </div>
-
-                        </div> 
-
+                        </div>
                     </div>
-
                 </div>
-
                 <div class="slide-item">
-
                     <div class="pattern-box">
-
                         <div class="pattern-1"></div>
-
                         <div class="pattern-2"></div>
-
                         <div class="pattern-3" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-
                     </div>
-
                     <div class="auto-container">
-
                         <div class="inner-box">
-
                             <div class="image-box">
-
-                                <figure class="image image-1"><img src="assets/images/banner/vector-1.png" alt=""></figure>
-
-                                <figure class="image image-2"><img src="assets/images/banner/vector-2.png" alt=""></figure>
-
+                                <figure class="image image-1"><img src="assets/images/banner/vector-1.png" alt="Air murni Reverse Osmosis dan Bio-Alkali pH 8.5+" loading="lazy" style="object-fit: contain;"></figure>
+                                <figure class="image image-2"><img src="assets/images/banner/vector-2.png" alt="Tetes air terapi sehat evevdepot" loading="lazy" style="object-fit: contain;"></figure>
                             </div>
-
                             <div class="content-box">
-                                <h2>Air Murni Reverse Osmosis (RO) &amp; Bio-Alkali pH 8.5+</h2>
-                                <p>Pilihan hidrasi prima dengan TDS rendah dan air alkali mikro-kluster seimbang untuk memelihara daya tahan dan metabolisme tubuh.</p>
+                                <h2>Pilihan Lengkap: Air Mineral, Reverse Osmosis (RO) &amp; Bio-Alkali pH 8.5+</h2>
+                                <p>Mulai Rp 6.000 per galon! Tersedia juga paket kupon hemat 10 gratis 1 serta kontrak suplai B2B bergaransi ketepatan waktu untuk kantor, klinik, dan kedai kopi.</p>
                                 <div class="btn-box clearfix">
-                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot,%20saya%20mau%20tanya%20air%20RO%20dan%20Alkali" class="theme-btn btn-one" target="_blank">Pesan via WA</a>
-                                    <a href="#keunggulan" class="theme-btn banner-btn">Uji Kualitas Lab</a>
+                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20konsultasi%20pilihan%20air%20RO%20dan%20Alkali." data-wa-paket="Konsultasi Air RO & Bio-Alkali" class="theme-btn btn-one" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp mr-1"></i> Tanya Paket Hemat</a>
+                                    <a href="#keunggulan" class="theme-btn banner-btn">Standar Uji Lab</a>
                                 </div>
                             </div>
-
-                        </div> 
-
+                        </div>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- banner-section end -->
 
-
-
-
-
         <!-- feature-section -->
-
         <section class="feature-section centred">
-
             <div class="auto-container">
-
                 <div class="inner-container wow fadeInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-
                     <div class="title-text">
-
-                        <h2>Depot Air Minum Terpercaya <br />Keluarga &amp; Tempat Usaha</h2>
-
+                        <h2>Mengapa Ribuan Keluarga &amp; Kantor <br />Memilih evevdepot Setiap Hari?</h2>
                     </div>
-
                     <div class="row clearfix">
-
                         <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-
                             <div class="feature-block-one">
-
                                 <div class="inner-box">
-
                                     <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-
                                     <div class="icon-box"><i class="flaticon-water-drop"></i></div>
-
-                                    <h4>Kemurnian Maksimal</h4>
-
-                                    <p>Air jernih bebas bau, rasa, dan partikel mikro berkat sterilisasi ketat.</p>
-
+                                    <h4>Teruji Lab Dinkes</h4>
+                                    <p>Parameter pH, TDS, dan bebas bakteri E. Coli diperiksa berkala demi keamanan konsumsi keluarga.</p>
                                 </div>
-
                             </div>
-
                         </div>
-
                         <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-
                             <div class="feature-block-one">
-
                                 <div class="inner-box">
-
                                     <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-
                                     <div class="icon-box"><i class="flaticon-water-drop-1"></i></div>
-
-                                    <h4>Bebas Klorin &amp; Bakteri</h4>
-
-                                    <p>Filter karbon aktif premium menyerap kaporit dan kontaminan berbahaya.</p>
-
+                                    <h4>Bebas Klorin &amp; Bau</h4>
+                                    <p>Karbon aktif premium menyerap kaporit, bau besi, dan zat organik sehingga rasa air lebih segar alami.</p>
                                 </div>
-
                             </div>
-
                         </div>
-
                         <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-
                             <div class="feature-block-one">
-
                                 <div class="inner-box">
-
                                     <div class="shape" style="background-image: url(assets/images/shape/shape-3.png);"></div>
-
                                     <div class="icon-box"><i class="flaticon-recycle"></i></div>
-
-                                    <h4>5 Tahap Filtrasi &amp; UV</h4>
-
-                                    <p>Proses sedimen, karbon, membran, ozon, dan ultraviolet sterilizer terpadu.</p>
-
+                                    <h4>5 Tahap Filtrasi + UV</h4>
+                                    <p>Sedimen mikro, karbon aktif, membran RO 0.0001 mikron, ozonisasi, dan lampu ultraviolet sterilizer.</p>
                                 </div>
-
                             </div>
-
                         </div>
-
                         <div class="col-lg-3 col-md-6 col-sm-12 feature-block">
-
                             <div class="feature-block-one">
-
                                 <div class="inner-box">
-
                                     <div class="icon-box"><i class="flaticon-glass"></i></div>
-
-                                    <h4>Air Sehat Alami</h4>
-
-                                    <p>Menjaga hidrasi tubuh tetap seimbang dengan ion mineral bermanfaat.</p>
-
+                                    <h4>Antar Kilat Gratis Ongkir</h4>
+                                    <p>Cukup chat WhatsApp, galon disikat bersih, dibilas ozon, disegel rapi, dan diantar 15–30 menit.</p>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- feature-section end -->
 
-
-
-
-
         <!-- about-section -->
-
         <section class="about-section" id="tentang">
-
             <div class="auto-container">
-
                 <div class="row align-items-center clearfix">
-
                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-
-                        <figure class="image-box clearfix wow fadeInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms"><img src="assets/images/evevdepot/hero_depot_air_modern.webp" alt=""></figure>
-
+                        <figure class="image-box clearfix wow fadeInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <img src="assets/images/evevdepot/hero_depot_air_modern.webp" alt="Ruang filtrasi stainless steel higienis depot air minum evevdepot" loading="lazy" style="object-fit: cover;">
+                        </figure>
                     </div>
-
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-
                         <div class="content_block_1">
-
                             <div class="content-box wow fadeInRight animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-
                                 <div class="sec-title">
-
-                                    <h2>Komitmen Menghadirkan Air Galon Bersih, Murni &amp; Higienis.</h2>
-
+                                    <h2>Standar Depot Modern: Bersih, Transparan &amp; Higienis Sampai ke Gelas Anda.</h2>
                                 </div>
-
                                 <div class="text">
-
-                                    <p>evevdepot hadir sebagai solusi air minum isi ulang terpercaya di Jakarta Selatan. Kami mengoperasikan sistem filtrasi terpadu berbasis stainless steel food grade 304 dengan standar kebersihan tertinggi untuk keluarga maupun tempat kerja Anda.</p>
-
-                                    <p>Setiap galon yang masuk melewati tahapan pembersihan mekanis, bilas air steril bertekanan, pengisian kedap udara, serta penyegelan rapat anti-bocor untuk menjamin kualitas kesegaran air tetap terjaga utuh sampai ke meja Anda.</p>
-
+                                    <p><strong>evevdepot</strong> adalah depot air minum isi ulang modern yang berlokasi di Cilandak, Jakarta Selatan. Seluruh jalur pengisian kami menggunakan instalasi <em>stainless steel food-grade 304</em> tertutup agar terhindar dari kontaminasi udara luar.</p>
+                                    <p>Sebelum diisi, setiap galon dicuci menggunakan mesin sikat mekanis, dibilas air ozon bertekanan tinggi, diisi di ruang kaca steril, lalu ditutup segel baru yang rapat dan tisu antiseptik gratis untuk menjaga kesegaran maksimal.</p>
                                 </div>
-
                                 <div class="btn-box">
-
-                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot,%20saya%20mau%20tanya%20layanan" class="theme-btn btn-one" target="_blank">Pesan / Tanya Layanan</a>
-
+                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20tanya%20tentang%20layanan%20antar%20galon." data-wa-paket="Konsultasi Layanan evevdepot" class="theme-btn btn-one" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp mr-1"></i> Pesan / Tanya Layanan</a>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- about-section end -->
 
-
-
-
-
         <!-- service-section -->
-
         <section class="service-section bg-color-1" id="layanan">
-
             <div class="shape" style="background-image: url(assets/images/shape/shape-4.png);"></div>
-
-            <figure class="image-layer"><img src="assets/images/resource/service-1.png" alt=""></figure>
-
+            <figure class="image-layer"><img src="assets/images/resource/service-1.png" alt="Ilustrasi botol dan air minum bersih evevdepot" loading="lazy" style="object-fit: contain;"></figure>
             <div class="bg-shape">
-
                 <div class="bg-shape-1"></div>
-
                 <div class="bg-shape-2"></div>
-
                 <div class="bg-shape-3"></div>
-
             </div>
-
             <div class="auto-container">
-
                 <div class="sec-title centred">
-
-                    <h2>Solusi Kebutuhan Air Minum <br />untuk Rumah &amp; Tempat Usaha</h2>
-
+                    <h2>Solusi Lengkap Kebutuhan Air Minum <br />untuk Rumah, Kos &amp; Tempat Usaha</h2>
                 </div>
-
                 <div class="row clearfix">
-
                     <div class="col-lg-6 col-md-12 col-sm-12 big-column">
-
                         <div class="left-column text-right">
-
                             <div class="service-block-one wow fadeInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-
                                 <div class="inner-box">
-
                                     <div class="icon-box"><i class="flaticon-water-bottle-1"></i></div>
-
-                                    <h4><a href="#produk">Isi Ulang Galon Keluarga</a></h4>
-
-                                    <p>Air mineral pegunungan alami kaya ion esensial untuk minum dan memasak sehari-hari.</p>
-
+                                    <h4><a href="#produk">Isi Ulang Galon Rumah Tangga</a></h4>
+                                    <p>Air mineral pegunungan segar kaya ion alami mulai Rp 6.000/galon, pas untuk minum harian dan memasak keluarga.</p>
                                 </div>
-
                             </div>
-
                             <div class="service-block-one wow fadeInLeft animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-
                                 <div class="inner-box">
-
                                     <div class="icon-box"><i class="flaticon-water"></i></div>
-
-                                    <h4><a href="#produk">Filtrasi Multi-Tahap Steril</a></h4>
-
-                                    <p>Sistem pengolahan air terintegrasi dengan pemantauan TDS dan sterilisasi ozon berkala.</p>
-
+                                    <h4><a href="#produk">Gratis Cuci &amp; Sterilisasi Ozon</a></h4>
+                                    <p>Setiap isi ulang sudah termasuk sikat dalam-luar galon, bilas air ozon steril, tutup segel baru, dan tisu higienis.</p>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-6 col-md-12 col-sm-12 big-column">
-
                         <div class="right-column text-left">
-
                             <div class="service-block-one wow fadeInRight animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-
                                 <div class="inner-box">
-
                                     <div class="icon-box"><i class="flaticon-water-bottle"></i></div>
-
-                                    <h4><a href="#produk">Pasokan Galon Kantor (B2B)</a></h4>
-
-                                    <p>Layanan langganan rutin untuk perkantoran, ruko, klinik, dan kafe dengan nota tagihan resmi.</p>
-
+                                    <h4><a href="#produk">Suplai Rutin Kantor &amp; Usaha (B2B)</a></h4>
+                                    <p>Jadwal pengiriman pasti untuk kantor, ruko, klinik, dan kedai kopi lengkap dengan nota tagihan bulanan resmi.</p>
                                 </div>
-
                             </div>
-
                             <div class="service-block-one wow fadeInRight animated" data-wow-delay="300ms" data-wow-duration="1500ms">
-
                                 <div class="inner-box">
-
                                     <div class="icon-box"><i class="flaticon-water-drop-1"></i></div>
-
-                                    <h4><a href="#produk">Air Murni RO &amp; Alkali pH 8.5+</a></h4>
-
-                                    <p>Air demineralisasi murni TDS &lt; 10 ppm serta air alkali bio-energi untuk metabolisme tubuh optimal.</p>
-
+                                    <h4><a href="#produk">Air Murni RO &amp; Bio-Alkali pH 8.5+</a></h4>
+                                    <p>Air RO TDS &lt; 10 ppm yang ringan di ginjal serta Bio-Alkali pH 8.5+ untuk bantu jaga kebugaran metabolisme tubuh.</p>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- service-section end -->
 
-
-
-
-
         <!-- chooseus-section -->
-
         <section class="chooseus-section" id="keunggulan">
-
             <div class="bg-layer" style="background-image: url(assets/images/shape/shape-5.png);"></div>
-
             <div class="shape-layer">
-
                 <div class="shape-1" style="background-image: url(assets/images/shape/shape-6.png);"></div>
-
                 <div class="shape-2"></div>
-
                 <div class="shape-3"></div>
-
                 <div class="shape-4" style="background-image: url(assets/images/shape/shape-32.png);"></div>
-
             </div>
-
             <div class="auto-container">
-
                 <div class="row clearfix">
-
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-
                         <div class="content_block_2">
-
                             <div class="content-box">
-
                                 <div class="sec-title light">
-
-                                    <h2>Standar Mutu Tertinggi untuk Menjaga Kesehatan Keluarga Anda.</h2>
-
+                                    <h2>Jaminan Mutu Terukur Demi Kesehatan Keluarga Anda.</h2>
                                 </div>
-
                                 <div class="inner-box">
-
                                     <div class="single-item">
-
                                         <div class="icon-box"><i class="flaticon-draw-check-mark"></i></div>
-
                                         <div class="text">
-
                                             <h4>Pencucian &amp; Sanitasi Galon Otomatis</h4>
-
-                                            <p>Sebelum diisi, setiap galon disikat secara mekanis dan dibilas air ozon steril agar bebas lumut, debu, dan kuman.</p>
-
+                                            <p>Galon disikat mekanis dan dibilas air ozon steril sebelum diisi sehingga bebas lumut, kerak, dan kontaminan bakteri.</p>
                                         </div>
-
                                     </div>
-
                                     <div class="single-item">
-
                                         <div class="icon-box"><i class="flaticon-draw-check-mark"></i></div>
-
                                         <div class="text">
-
-                                            <h4>Layanan Antar Kilat &amp; Kurir Sigap</h4>
-
-                                            <p>Armada kurir kami siap mengantarkan galon langsung ke depan pintu rumah maupun lantai kantor Anda tepat waktu.</p>
-
+                                            <h4>Pengantaran Cepat &amp; Siap Pasang Dispenser</h4>
+                                            <p>Kurir ramah kami mengantar langsung hingga ke dapur atau lantai kantor Anda dengan estimasi 15–30 menit di area layanan.</p>
                                         </div>
-
                                     </div>
-
+                                    <div class="single-item">
+                                        <div class="icon-box"><i class="flaticon-draw-check-mark"></i></div>
+                                        <div class="text">
+                                            <h4>Transparansi Cek TDS &amp; pH Kapan Saja</h4>
+                                            <p>Anda dapat meminta pengecekan TDS meter dan pH tester secara langsung untuk memastikan standar kualitas air evevdepot.</p>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-
                         <div class="image-box wow fadeInRight animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-
-                            <figure class="image"><img src="assets/images/evevdepot/portfolio_uji_lab_dinkes.webp" alt=""></figure>
-
+                            <figure class="image"><img src="assets/images/evevdepot/portfolio_uji_lab_dinkes.webp" alt="Dokumentasi pengujian laboratorium kualitas air minum evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- chooseus-section end -->
 
-
-
-
-
-        <!-- shop-section -->
-
+        <!-- shop-section (Daftar Paket & Harga Lengkap 6 Item) -->
         <section class="shop-section centred" id="produk">
-
             <div class="auto-container">
-
                 <div class="sec-title">
-
-                    <h2>Pilihan Produk Air Galon <br />&amp; Kebutuhan Higienis</h2>
-
+                    <h2>Daftar Layanan &amp; Harga Paket Air Galon <br />Transparan Tanpa Biaya Tersembunyi</h2>
+                    <p style="max-width:680px;margin:12px auto 0;font-size:15px;">Semua pemesanan sudah termasuk gratis cuci ozon, tutup segel baru higienis, dan gratis antar untuk area Cilandak, Fatmawati, Pondok Labu, Lebak Bulus &amp; sekitarnya.</p>
                 </div>
-
                 <div class="row clearfix">
-
+                    <!-- Paket 1 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500m">
-
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
-                                <figure class="image-box"><img src="assets/images/resource/shop/shop-1.jpg" alt=""></figure>
-
+                                <figure class="image-box"><img src="assets/images/resource/shop/shop-1.jpg" alt="Isi Ulang Air Mineral Alami Pegunungan Galon 19 Liter evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                                 <div class="lower-content">
-
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
-
-                                    <span>Galon 19 Liter</span>
-
-                                    <h4><a href="https://wa.me/62895323418658?text=Pesan%20Isi%20Ulang%20Air%20Mineral%2019L" target="_blank">Air Mineral Alami</a></h4>
-
-                                    <h6>Rp 6.000</h6>
-
-                                    <p>Air minum segar berkarakter alami kaya ion esensial untuk kebutuhan harian.</p>
-
-                                    <div class="btn-box">
-
-                                        <a href="https://wa.me/62895323418658?text=Pesan%20Isi%20Ulang%20Air%20Mineral%2019L" class="theme-btn btn-two" target="_blank">Pesan via WA</a>
-
+                                    <div>
+                                        <span class="produk-badge">Favorit Keluarga</span>
+                                        <span class="produk-kemasan">Isi Ulang Galon 19 Liter</span>
+                                        <h4><a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Air%20Mineral%20Alami%20Pegunungan%20(Rp%206.000)." data-wa-paket="Air Mineral Alami Pegunungan" data-wa-harga="Rp 6.000" target="_blank" rel="noopener noreferrer">Air Mineral Alami Pegunungan</a></h4>
+                                        <span class="produk-harga">Rp 6.000</span>
+                                        <div class="produk-spec"><i class="fas fa-check-circle mr-1"></i> Filtrasi 5 Tahap + Sterilisasi UV &amp; Ozon</div>
+                                        <p>Air sumber pegunungan jernih dengan keseimbangan mineral alami yang segar untuk diminum langsung maupun memasak kebutuhan keluarga setiap hari.</p>
                                     </div>
-
+                                    <div class="btn-box">
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Air%20Mineral%20Alami%20Pegunungan%20(Rp%206.000)." data-wa-paket="Air Mineral Alami Pegunungan" data-wa-harga="Rp 6.000" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Pesan via WA</a>
+                                    </div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
+                    <!-- Paket 2 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500m">
-
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="150ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
-                                <figure class="image-box"><img src="assets/images/resource/shop/shop-2.jpg" alt=""></figure>
-
+                                <figure class="image-box"><img src="assets/images/resource/shop/shop-2.jpg" alt="Isi Ulang Air Murni Reverse Osmosis RO Galon 19 Liter evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                                 <div class="lower-content">
-
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
-
-                                    <span>Galon 19 Liter</span>
-
-                                    <h4><a href="https://wa.me/62895323418658?text=Pesan%20Isi%20Ulang%20Air%20Murni%20RO%2019L" target="_blank">Air Murni Reverse Osmosis</a></h4>
-
-                                    <h6>Rp 8.000</h6>
-
-                                    <p>Air demineralisasi TDS rendah (&lt;10 ppm), sangat murni dan ringan bagi ginjal.</p>
-
-                                    <div class="btn-box">
-
-                                        <a href="https://wa.me/62895323418658?text=Pesan%20Isi%20Ulang%20Air%20Murni%20RO%2019L" class="theme-btn btn-two" target="_blank">Pesan via WA</a>
-
+                                    <div>
+                                        <span class="produk-badge">Best Seller</span>
+                                        <span class="produk-kemasan">Isi Ulang Galon 19 Liter</span>
+                                        <h4><a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Air%20Murni%20Reverse%20Osmosis%20RO%20(Rp%208.000)." data-wa-paket="Air Murni Reverse Osmosis (RO)" data-wa-harga="Rp 8.000" target="_blank" rel="noopener noreferrer">Air Murni Reverse Osmosis (RO)</a></h4>
+                                        <span class="produk-harga">Rp 8.000</span>
+                                        <div class="produk-spec"><i class="fas fa-check-circle mr-1"></i> TDS Rendah (&lt; 10 ppm) • Membran 0.0001 Mikron</div>
+                                        <p>Air demineralisasi ekstra murni yang ringan bagi ginjal, aman untuk bayi dan lansia, serta ideal untuk menyeduh kopi dan teh tanpa mengubah cita rasa.</p>
                                     </div>
-
+                                    <div class="btn-box">
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Air%20Murni%20Reverse%20Osmosis%20RO%20(Rp%208.000)." data-wa-paket="Air Murni Reverse Osmosis (RO)" data-wa-harga="Rp 8.000" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Pesan via WA</a>
+                                    </div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
+                    <!-- Paket 3 -->
                     <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
-
-                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500m">
-
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
-                                <figure class="image-box"><img src="assets/images/resource/shop/shop-3.jpg" alt=""></figure>
-
+                                <figure class="image-box"><img src="assets/images/resource/shop/shop-3.jpg" alt="Isi Ulang Air Sehat Bio-Alkali pH 8.5+ Galon 19 Liter evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                                 <div class="lower-content">
-
-                                    <div class="shape" style="background-image: url(assets/images/shape/shape-7.png);"></div>
-
-                                    <span>Galon 19 Liter</span>
-
-                                    <h4><a href="https://wa.me/62895323418658?text=Pesan%20Isi%20Ulang%20Air%20Alkali%20pH85" target="_blank">Air Sehat Bio-Alkali pH 8.5+</a></h4>
-
-                                    <h6>Rp 15.000</h6>
-
-                                    <p>Air terapi dengan molekul mikro-kluster untuk menyeimbangkan pH tubuh prima.</p>
-
-                                    <div class="btn-box">
-
-                                        <a href="https://wa.me/62895323418658?text=Pesan%20Isi%20Ulang%20Air%20Alkali%20pH85" class="theme-btn btn-two" target="_blank">Pesan via WA</a>
-
+                                    <div>
+                                        <span class="produk-badge">Terapi Hidrasi</span>
+                                        <span class="produk-kemasan">Isi Ulang Galon 19 Liter</span>
+                                        <h4><a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Air%20Sehat%20Bio-Alkali%20pH%208.5%2B%20(Rp%2015.000)." data-wa-paket="Air Sehat Bio-Alkali pH 8.5+" data-wa-harga="Rp 15.000" target="_blank" rel="noopener noreferrer">Air Sehat Bio-Alkali pH 8.5+</a></h4>
+                                        <span class="produk-harga">Rp 15.000</span>
+                                        <div class="produk-spec"><i class="fas fa-check-circle mr-1"></i> pH Seimbang 8.5+ • Molekul Mikro-Kluster</div>
+                                        <p>Air minum terionisasi bio-energi yang lebih cepat diserap tubuh, membantu menetralisir asam berlebih, dan menjaga kebugaran serta stamina harian.</p>
                                     </div>
-
+                                    <div class="btn-box">
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Air%20Sehat%20Bio-Alkali%20pH%208.5%2B%20(Rp%2015.000)." data-wa-paket="Air Sehat Bio-Alkali pH 8.5+" data-wa-harga="Rp 15.000" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Pesan via WA</a>
+                                    </div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
 
+                    <!-- Paket 4 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/evevdepot/hero_kurir_antar_galon.webp" alt="Paket Kupon Hemat Beli 10 Gratis 1 Galon Air evevdepot" loading="lazy" style="object-fit: cover;"></figure>
+                                <div class="lower-content">
+                                    <div>
+                                        <span class="produk-badge">Paling Hemat</span>
+                                        <span class="produk-kemasan">11 Kupon Galon Mineral (RO: Rp 80.000)</span>
+                                        <h4><a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Paket%20Kupon%20Hemat%2010%20Gratis%201%20(Rp%2060.000)." data-wa-paket="Paket Kupon Hemat (Beli 10 Gratis 1)" data-wa-harga="Rp 60.000" target="_blank" rel="noopener noreferrer">Paket Kupon Hemat (Beli 10 Gratis 1)</a></h4>
+                                        <span class="produk-harga">Rp 60.000</span>
+                                        <div class="produk-spec"><i class="fas fa-check-circle mr-1"></i> Tanpa Masa Hangus • Gratis Ongkos Kirim</div>
+                                        <p>Solusi hemat pengeluaran bulanan rumah tangga atau anak kos. Tukar kupon kapan saja saat butuh, sudah termasuk cuci galon ozon dan antar langsung.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Paket%20Kupon%20Hemat%2010%20Gratis%201%20(Rp%2060.000)." data-wa-paket="Paket Kupon Hemat (Beli 10 Gratis 1)" data-wa-harga="Rp 60.000" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Pesan Kupon via WA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paket 5 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="150ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/evevdepot/service_antar_galon_kantor.webp" alt="Paket Langganan Pasokan Air Galon Kantor dan Ruko B2B evevdepot" loading="lazy" style="object-fit: cover;"></figure>
+                                <div class="lower-content">
+                                    <div>
+                                        <span class="produk-badge">Korporat &amp; Usaha</span>
+                                        <span class="produk-kemasan">25 Galon / Bulan • Jadwal Antar Rutin</span>
+                                        <h4><a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20tertarik%20Paket%20Langganan%20Kantor%20B2B%20(Rp%20150.000%2Fbln)." data-wa-paket="Paket Langganan Kantor & Ruko (B2B)" data-wa-harga="Rp 150.000 / bln" target="_blank" rel="noopener noreferrer">Paket Langganan Kantor &amp; Ruko (B2B)</a></h4>
+                                        <span class="produk-harga">Rp 150.000</span>
+                                        <div class="produk-spec"><i class="fas fa-check-circle mr-1"></i> Nota Resmi Bulanan • Prioritas Antar Pagi</div>
+                                        <p>Pasokan air minum terjadwal untuk kantor, klinik, kafe, dan ruko. Tersedia opsi peminjaman dispenser higienis dan perawatan kebersihan berkala.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20tertarik%20Paket%20Langganan%20Kantor%20B2B%20(Rp%20150.000%2Fbln)." data-wa-paket="Paket Langganan Kantor & Ruko (B2B)" data-wa-harga="Rp 150.000 / bln" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Daftar Langganan</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Paket 6 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 shop-block">
+                        <div class="shop-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                            <div class="inner-box">
+                                <figure class="image-box"><img src="assets/images/evevdepot/hero_depot_air_modern.webp" alt="Paket Galon Baru BPA-Free Lengkap dengan Isi Air Murni RO evevdepot" loading="lazy" style="object-fit: cover;"></figure>
+                                <div class="lower-content">
+                                    <div>
+                                        <span class="produk-badge">Pelanggan Baru</span>
+                                        <span class="produk-kemasan">1 Unit Galon 19L Baru + Isi Penuh RO</span>
+                                        <h4><a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Galon%20Baru%20BPA-Free%20%2B%20Isi%20Air%20RO%20(Rp%2055.000)." data-wa-paket="Galon Baru BPA-Free + Isi Air RO" data-wa-harga="Rp 55.000" target="_blank" rel="noopener noreferrer">Galon Baru BPA-Free + Isi Air RO</a></h4>
+                                        <span class="produk-harga">Rp 55.000</span>
+                                        <div class="produk-spec"><i class="fas fa-check-circle mr-1"></i> Polikarbonat Food-Grade • Segel Anti-Bocor</div>
+                                        <p>Belum punya galon kosong? Pesan galon baru food-grade bebas BPA yang sudah dibilas ozon, diisi penuh air murni RO, dan siap pasang di dispenser Anda.</p>
+                                    </div>
+                                    <div class="btn-box">
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20Galon%20Baru%20BPA-Free%20%2B%20Isi%20Air%20RO%20(Rp%2055.000)." data-wa-paket="Galon Baru BPA-Free + Isi Air RO" data-wa-harga="Rp 55.000" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Pesan Galon Baru</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </section>
-
         <!-- shop-section end -->
 
-
-
-
-
         <!-- testimonial-section -->
-
         <section class="testimonial-section bg-color-1" id="testimoni">
-
             <div class="shape-layer">
-
                 <div class="shape-1" style="background-image: url(assets/images/shape/shape-8.png);"></div>
-
                 <div class="shape-2" style="background-image: url(assets/images/shape/shape-9.png);"></div>
-
             </div>
-
             <div class="auto-container">
-
                 <div class="sec-title">
-
                     <h2>Apa Kata Pelanggan Setia <br />Tentang Layanan evevdepot?</h2>
-
                 </div>
-
                 <div class="two-column-carousel owl-carousel owl-theme owl-nav-none">
-
                     <div class="testimonial-block-one">
-
                         <div class="inner-box">
-
-                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt=""></figure>
-
+                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt="Testimoni Ibu Ratna Kumalasari pelanggan evevdepot Cilandak" loading="lazy" style="object-fit: cover;"></figure>
                             <div class="inner">
-
                                 <ul class="rating clearfix">
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                 </ul>
-
-                                <p>Airnya sangat segar, tidak ada aroma atau rasa aneh sama sekali. Anak-anak suka sekali dan kurirnya sangat sopan serta sigap bantu angkat galon.</p>
+                                <p>Airnya sangat segar, tidak ada aroma atau rasa aneh sama sekali. Anak-anak suka sekali dan kurirnya sangat sopan serta sigap bantu angkat galon sampai ke dapur.</p>
                                 <h5>Ibu Ratna Kumalasari</h5>
                                 <span class="designation">Ibu Rumah Tangga, Cilandak</span>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="testimonial-block-one">
-
                         <div class="inner-box">
-
-                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-2.jpg" alt=""></figure>
-
+                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-2.jpg" alt="Testimoni Pak Hendra Wijaya pelanggan B2B evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                             <div class="inner">
-
                                 <ul class="rating clearfix">
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                 </ul>
-
-                                <p>Kantor kami langganan 30 galon per minggu. Pengiriman selalu tepat pagi sebelum karyawan masuk kantor. Pelayanan konsisten dan sangat profesional!</p>
+                                <p>Kantor kami langganan 30 galon per minggu. Pengiriman selalu tepat pagi sebelum karyawan masuk kantor dan nota tagihannya sangat rapi!</p>
                                 <h5>Pak Hendra Wijaya</h5>
-                                <span class="designation">Manajer Operasional Kantor</span>
-
+                                <span class="designation">Manajer Operasional Kantor, Fatmawati</span>
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="testimonial-block-one">
-
                         <div class="inner-box">
-
-                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt=""></figure>
-
+                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt="Testimoni dr. Lukman Hakim pengguna Air RO evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                             <div class="inner">
-
                                 <ul class="rating clearfix">
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                 </ul>
-
-                                <p>TDS air RO evevdepot sangat stabil di angka rendah, cocok sekali untuk menjaga hidrasi sehat pasien dan keluarga kami di rumah.</p>
+                                <p>TDS air RO evevdepot sangat stabil di angka rendah, cocok sekali untuk menjaga hidrasi sehat pasien dan keluarga kami di rumah setiap hari.</p>
                                 <h5>dr. Lukman Hakim, Sp.PD</h5>
-                                <span class="designation">Praktisi Kesehatan</span>
-
+                                <span class="designation">Praktisi Kesehatan, Jakarta Selatan</span>
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="testimonial-block-one">
-
                         <div class="inner-box">
-
-                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-2.jpg" alt=""></figure>
-
+                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-2.jpg" alt="Testimoni Ibu Maya Sandra pemilik kedai kopi pelanggan evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                             <div class="inner">
-
                                 <ul class="rating clearfix">
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                 </ul>
-
-                                <p>Untuk menyeduh espresso dan manual brew di kedai kami, air RO dari evevdepot menghasilkan rasa kopi yang bersih dan notes rasa beans keluar sempurna.</p>
+                                <p>Untuk menyeduh espresso dan manual brew di kedai kami, air RO dari evevdepot menghasilkan rasa kopi yang bersih dan karakter biji kopi keluar sempurna.</p>
                                 <h5>Ibu Maya Sandra</h5>
-                                <span class="designation">Pemilik Kedai Kopi</span>
-
+                                <span class="designation">Pemilik Kedai Kopi, Kemang</span>
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="testimonial-block-one">
-
                         <div class="inner-box">
-
-                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt=""></figure>
-
+                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-1.jpg" alt="Testimoni drg. Sinta Maharani klinik gigi pelanggan evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                             <div class="inner">
-
                                 <ul class="rating clearfix">
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                 </ul>
-
-                                <p>Layanan pesan antar evevdepot sangat membantu klinik kami. Pengiriman galon tidak pernah telat dan dispenser selalu dijaga kebersihannya.</p>
+                                <p>Layanan pesan antar evevdepot sangat membantu klinik kami. Pengiriman galon tidak pernah telat dan kebersihan galonnya selalu terjaga.</p>
                                 <h5>drg. Sinta Maharani</h5>
-                                <span class="designation">Klinik Gigi Sehat</span>
-
+                                <span class="designation">Klinik Gigi Sehat, Pondok Labu</span>
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="testimonial-block-one">
-
                         <div class="inner-box">
-
-                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-2.jpg" alt=""></figure>
-
+                            <figure class="author-thumb"><img src="assets/images/resource/testimonial-2.jpg" alt="Testimoni Pak Bambang Triyono pelanggan air alkali evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                             <div class="inner">
-
                                 <ul class="rating clearfix">
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                     <li><i class="fas fa-star"></i></li>
-
                                 </ul>
-
-                                <p>Keluarga kami sudah beralih ke air alkali evevdepot sejak 6 bulan lalu. Badan terasa lebih enteng, fit, dan tidak gampang lelah saat bekerja.</p>
+                                <p>Keluarga kami sudah beralih ke air Bio-Alkali evevdepot sejak 6 bulan lalu. Badan terasa lebih bugar, ringan, dan lebih segar saat beraktivitas.</p>
                                 <h5>Pak Bambang Triyono</h5>
                                 <span class="designation">Warga Cilandak Barat</span>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- testimonial-section end -->
 
-
-
-
-
         <!-- team-section -->
-
         <section class="team-section">
-
             <div class="auto-container">
-
                 <div class="sec-title centred">
-
-                    <h2>What is Really seo & How <br />Can I Use It?</h2>
-
+                    <h2>Tim Ahli Filtrasi &amp; Armada Kurir <br />Berpengalaman evevdepot</h2>
                 </div>
-
                 <div class="row clearfix">
-
                     <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-
-                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500m">
-
+                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
                                 <div class="image-box">
-
-                                    <figure class="image"><img src="assets/images/team/team-1.jpg" alt=""></figure>
-
+                                    <figure class="image"><img src="assets/images/team/team-1.jpg" alt="Budi Santoso Kepala Teknisi Filtrasi dan QC evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                                     <ul class="social-links clearfix">
-
-                                        <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
-
-                                        <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
-
-                                        <li><a href="index.html"><i class="fab fa-google-plus-g"></i></a></li>
-
+                                        <li><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" aria-label="Hubungi Budi Santoso via WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                                        <li><a href="#kontak" aria-label="Kontak Tim QC"><i class="fas fa-envelope"></i></a></li>
                                     </ul>
-
                                 </div>
-
                                 <div class="lower-content">
-
                                     <h4><a href="#kontak">Budi Santoso</a></h4>
                                     <span class="designation">Kepala Teknisi Filtrasi &amp; QC</span>
-
-                                    <div class="share-box"><a href="index.html"><i class="fas fa-share-alt"></i></a></div>
-
+                                    <div class="share-box"><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-
-                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500m">
-
+                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
                                 <div class="image-box">
-
-                                    <figure class="image"><img src="assets/images/team/team-2.jpg" alt=""></figure>
-
+                                    <figure class="image"><img src="assets/images/team/team-2.jpg" alt="Joko Susilo Koordinator Logistik dan Kurir Antar Galon evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                                     <ul class="social-links clearfix">
-
-                                        <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
-
-                                        <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
-
-                                        <li><a href="index.html"><i class="fab fa-google-plus-g"></i></a></li>
-
+                                        <li><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" aria-label="Hubungi Joko Susilo via WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                                        <li><a href="#kontak" aria-label="Kontak Tim Logistik"><i class="fas fa-envelope"></i></a></li>
                                     </ul>
-
                                 </div>
-
                                 <div class="lower-content">
-
                                     <h4><a href="#kontak">Joko Susilo</a></h4>
                                     <span class="designation">Koordinator Logistik &amp; Kurir</span>
-
-                                    <div class="share-box"><a href="index.html"><i class="fas fa-share-alt"></i></a></div>
-
+                                    <div class="share-box"><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 col-sm-12 team-block">
-
-                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500m">
-
+                        <div class="team-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
                                 <div class="image-box">
-
-                                    <figure class="image"><img src="assets/images/team/team-3.jpg" alt=""></figure>
-
+                                    <figure class="image"><img src="assets/images/team/team-3.jpg" alt="Rina Wulandari Customer Care dan Layanan B2B evevdepot" loading="lazy" style="object-fit: cover;"></figure>
                                     <ul class="social-links clearfix">
-
-                                        <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
-
-                                        <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
-
-                                        <li><a href="index.html"><i class="fab fa-google-plus-g"></i></a></li>
-
+                                        <li><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" aria-label="Hubungi Rina Wulandari via WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+                                        <li><a href="#kontak" aria-label="Kontak Customer Care"><i class="fas fa-envelope"></i></a></li>
                                     </ul>
-
                                 </div>
-
                                 <div class="lower-content">
-
                                     <h4><a href="#kontak">Rina Wulandari</a></h4>
                                     <span class="designation">Customer Care &amp; Layanan B2B</span>
-
-                                    <div class="share-box"><a href="index.html"><i class="fas fa-share-alt"></i></a></div>
-
+                                    <div class="share-box"><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- team-section end -->
 
-
-
-
-
         <!-- cta-section -->
-
         <section class="cta-section bg-color-2">
-
             <div class="pattern-layer">
-
                 <div class="pattern-1" style="background-image: url(assets/images/shape/shape-10.png);"></div>
-
                 <div class="pattern-2" style="background-image: url(assets/images/shape/shape-2.png);"></div>
-
                 <div class="pattern-3" style="background-image: url(assets/images/shape/shape-33.png);"></div>
-
                 <div class="pattern-4" style="background-image: url(assets/images/shape/shape-34.png);"></div>
-
             </div>
-
             <div class="auto-container">
-
                 <div class="row align-items-center clearfix">
-
                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-
-                        <figure class="image-box wow slideInLeft animated" data-wow-delay="00ms" data-wow-duration="1500m clearfix"><img src="assets/images/evevdepot/hero_kurir_antar_galon.webp" alt=""></figure>
-
+                        <figure class="image-box wow slideInLeft animated clearfix" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <img src="assets/images/evevdepot/hero_kurir_antar_galon.webp" alt="Kurir evevdepot mengantar air galon bersih langsung ke rumah pelanggan" loading="lazy" style="object-fit: cover;">
+                        </figure>
                     </div>
-
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-
                         <div class="content_block_3">
-
                             <div class="content-box">
-
                                 <div class="sec-title light">
-
-                                    <h2>Siap Menikmati Kemurnian Air Galon Segar Setiap Hari?</h2>
-
+                                    <h2>Kehabisan Air Galon? Pesan Sekarang, 15–30 Menit Langsung Sampai!</h2>
                                 </div>
-
                                 <div class="text">
-
-                                    <p>We give our services to more than 10 countries. We give our delivery service using more than 50 couriers within 2hr in anywhere in the city.</p>
-
+                                    <p>Tidak perlu keluar rumah atau mengangkat galon berat sendiri. Cukup kirim lokasi lewat WhatsApp, kurir ramah evevdepot siap mengantar galon bersih tersegel ke rumah, kos, ruko, atau kantor Anda.</p>
                                 </div>
-
                                 <ul class="list clearfix">
-
-                                    <li>Free Delivery</li>
-
-                                    <li>7 Days In A Week Service </li>
-
+                                    <li>Gratis Ongkos Kirim &amp; Cuci Galon Ozon</li>
+                                    <li>Buka 7 Hari Seminggu (06:30 – 21:00 WIB)</li>
                                 </ul>
-
                                 <div class="btn-box">
-
-                                    <a href="#layanan" class="theme-btn btn-one">Our Services</a>
-
+                                    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20mau%20pesan%20antar%20air%20galon%20sekarang." data-wa-paket="Pesan Antar Galon Kilat" class="theme-btn btn-one" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp mr-1"></i> Pesan Galon via WhatsApp</a>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- cta-section end -->
 
-
-
-
-
         <!-- news-section -->
-
         <section class="news-section">
-
             <div class="auto-container">
-
                 <div class="sec-title centred">
-
-                    <h2>Stay Update with <br />Acuasafe</h2>
-
+                    <h2>Edukasi Air Sehat &amp; Tips Hidrasi <br />dari Tim Ahli evevdepot</h2>
                 </div>
-
                 <div class="row clearfix">
-
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500m">
-
+                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="00ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
-                                <figure class="image-box"><a href="#testimoni"><img src="assets/images/news/news-1.jpg" alt=""></a></figure>
-
+                                <figure class="image-box"><a href="#produk"><img src="assets/images/news/news-1.jpg" alt="Perbedaan air mineral alami, Reverse Osmosis RO, dan Bio-Alkali" loading="lazy" style="object-fit: cover;"></a></figure>
                                 <div class="lower-content">
-
-                                    <div class="category"><a href="#kontak">Edukasi Hidrasi</a></div>
-
-                                    <h4><a href="#kontak">Perbedaan Mendasar Air Mineral Alami, RO, dan Alkali</a></h4>
-
+                                    <div class="category"><a href="#produk">Edukasi Hidrasi</a></div>
+                                    <h4><a href="#produk">Perbedaan Mendasar Air Mineral Alami, RO, dan Bio-Alkali</a></h4>
                                     <ul class="post-info clearfix">
-
                                         <li><a href="#kontak">Tim Ahli evevdepot</a></li>
-
                                         <li>18 Nov 2026</li>
-
                                     </ul>
-
                                     <div class="text">
-
-                                        <p>Pelajari karakteristik masing-masing jenis air minum untuk mendukung kesehatan keluarga, kebugaran tubuh, serta kebutuhan dapur Anda.</p>
-
+                                        <p>Pelajari karakteristik masing-masing jenis air minum agar Anda bisa memilih asupan terbaik bagi keluarga, bayi, lansia, hingga seduhan kopi harian.</p>
                                     </div>
-
                                     <div class="btn-box">
-
-                                        <a href="#kontak" class="theme-btn btn-two">Baca Selengkapnya</a>
-
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20tanya%20perbedaan%20air%20Mineral%2C%20RO%2C%20dan%20Alkali." data-wa-paket="Konsultasi Jenis Air Minum" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer">Tanya Ahli via WA</a>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500m">
-
+                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="300ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
-                                <figure class="image-box"><a href="#testimoni"><img src="assets/images/news/news-2.jpg" alt=""></a></figure>
-
+                                <figure class="image-box"><a href="#keunggulan"><img src="assets/images/news/news-2.jpg" alt="Tips membersihkan dispenser galon air minum di rumah agar bebas lumut" loading="lazy" style="object-fit: cover;"></a></figure>
                                 <div class="lower-content">
-
-                                    <div class="category"><a href="#kontak">Tips Sanitasi</a></div>
-
-                                    <h4><a href="#kontak">Kapan Anda Harus Membersihkan Dispenser Galon di Rumah?</a></h4>
-
+                                    <div class="category"><a href="#keunggulan">Tips Sanitasi</a></div>
+                                    <h4><a href="#keunggulan">Kapan Anda Harus Membersihkan Dispenser Galon di Rumah?</a></h4>
                                     <ul class="post-info clearfix">
-
                                         <li><a href="#kontak">QC Laboratorium</a></li>
-
                                         <li>15 Nov 2026</li>
-
                                     </ul>
-
                                     <div class="text">
-
-                                        <p>Panduan praktis menjaga kebersihan corong dan tangki dispenser agar air minum selalu steril dan terbebas dari lumut maupun kuman.</p>
-
+                                        <p>Panduan praktis menjaga kebersihan corong dan tangki dispenser setiap 1–2 bulan agar air minum tetap jernih, segar, dan terbebas dari lumut.</p>
                                     </div>
-
                                     <div class="btn-box">
-
-                                        <a href="#kontak" class="theme-btn btn-two">Baca Selengkapnya</a>
-
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20tips%20perawatan%20dispenser%20galon." data-wa-paket="Konsultasi Sanitasi Dispenser" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer">Konsultasi Gratis</a>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-4 col-md-6 col-sm-12 news-block">
-
-                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500m">
-
+                        <div class="news-block-one wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms">
                             <div class="inner-box">
-
-                                <figure class="image-box"><a href="#testimoni"><img src="assets/images/news/news-3.jpg" alt=""></a></figure>
-
+                                <figure class="image-box"><a href="#keunggulan"><img src="assets/images/news/news-3.jpg" alt="Pengukuran nilai TDS dan pH air minum layak konsumsi" loading="lazy" style="object-fit: cover;"></a></figure>
                                 <div class="lower-content">
-
-                                    <div class="category"><a href="#kontak">Standar Mutu</a></div>
-
-                                    <h4><a href="#kontak">Memahami Nilai TDS dan pH pada Air Minum Layak Konsumsi</a></h4>
-
+                                    <div class="category"><a href="#keunggulan">Standar Mutu</a></div>
+                                    <h4><a href="#keunggulan">Memahami Nilai TDS dan pH pada Air Minum Layak Konsumsi</a></h4>
                                     <ul class="post-info clearfix">
-
                                         <li><a href="#kontak">Teknisi Pengolahan Air</a></li>
-
                                         <li>10 Nov 2026</li>
-
                                     </ul>
-
                                     <div class="text">
-
-                                        <p>Mengapa angka TDS rendah dan pH seimbang menjadi indikator penting dalam memilih pasokan air minum harian keluarga.</p>
-
+                                        <p>Mengapa angka TDS rendah dan pH seimbang menjadi indikator penting dalam memilih depot air minum isi ulang yang aman untuk konsumsi jangka panjang.</p>
                                     </div>
-
                                     <div class="btn-box">
-
-                                        <a href="#kontak" class="theme-btn btn-two">Baca Selengkapnya</a>
-
+                                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20tahu%20hasil%20uji%20TDS%20dan%20pH%20air." data-wa-paket="Info Hasil Uji Lab TDS & pH" class="theme-btn btn-two" target="_blank" rel="noopener noreferrer">Cek Info Uji Lab</a>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
         <!-- news-section end -->
-
-
-
-
 
         <!-- main-footer -->
         <footer class="main-footer" id="kontak">
@@ -1626,25 +951,24 @@
                 <div class="footer-top clearfix">
                     <div class="line-shape" style="background-image: url(assets/images/shape/shape-11.png);"></div>
                     <div class="text pull-left">
-                        <h2>Pesan <span>Antar Galon</span> Cepat Langsung ke Rumah & Kantor</h2>
+                        <h2>Pesan <span>Antar Galon</span> Cepat Langsung ke Rumah &amp; Kantor</h2>
                     </div>
                     <div class="support-box pull-right">
-                        <a href="https://wa.me/62895323418658" target="_blank"><i class="fas fa-phone"></i>0895-3234-18658<br><span style="font-size:13px;color:#aaa;">evevdigital@gmail.com</span></a>
+                        <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20antar%20air%20galon." target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i><span data-config="whatsappDisplay">+62 895-3234-18658</span></a>
                     </div>
                 </div>
                 <div class="widget-section">
                     <div class="row clearfix">
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget logo-widget">
-                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt="evevdepot"></a></figure>
+                                <figure class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt="Logo Footer evevdepot" loading="lazy" style="object-fit: contain;"></a></figure>
                                 <div class="text">
-                                    <p>evevdepot melayani pengisian ulang air minum higienis dan pesan antar galon air mineral alami, murni RO, dan alkali pH 8.5+ berstandar uji lab Dinkes.</p>
+                                    <p data-config="deskripsi">Depot air minum isi ulang modern berstandar uji lab Dinkes dengan 5 tahap filtrasi, membran RO, sterilisasi UV &amp; ozon. Melayani pesan antar galon cepat ke rumah tangga, kos, ruko, klinik, kafe, dan perkantoran di Jakarta Selatan.</p>
                                 </div>
                                 <div class="schedule-box">
                                     <h6>Jam Operasional:</h6>
                                     <ul class="list clearfix">
-                                        <li>Senin - Minggu: 06:30 - 21:00 WIB</li>
-                                        <li>Hari Libur Nasional: Tetap Buka</li>
+                                        <li data-config="jamOperasional">Setiap Hari: 06:30 - 21:00 WIB (Hari Libur Nasional Tetap Buka)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1652,13 +976,13 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget contact-widget ml-70">
                                 <div class="widget-title">
-                                    <h4>Alamat & Kontak</h4>
+                                    <h4>Alamat &amp; Kontak</h4>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="info-list clearfix">
-                                        <li><i class="fal fa-map-marker-alt"></i>Jl. Melati Raya No. 18, Cilandak, Jakarta Selatan 12430</li>
-                                        <li><i class="fal fa-phone"></i>WhatsApp: <a href="https://wa.me/62895323418658" target="_blank">0895-3234-18658<br><span style="font-size:13px;color:#aaa;">evevdigital@gmail.com</span></a></li>
-                                        <li><i class="fal fa-envelope-open-text"></i><a href="mailto:kontak@evevdigital.com">kontak@evevdigital.com</a></li>
+                                        <li><i class="fal fa-map-marker-alt"></i><span data-config="alamat">Jl. Melati Raya No. 18, Cilandak, Jakarta Selatan 12430</span></li>
+                                        <li><i class="fal fa-phone"></i>WhatsApp: <a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" data-config="whatsappDisplay">+62 895-3234-18658</a></li>
+                                        <li><i class="fal fa-envelope-open-text"></i><a href="mailto:kontak@evevdigital.com" data-config="email">kontak@evevdigital.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1666,15 +990,16 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget links-widget ml-70">
                                 <div class="widget-title">
-                                    <h4>Pilihan Layanan</h4>
+                                    <h4>Daftar Paket &amp; Harga</h4>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
-                                        <li><a href="#layanan">Air Mineral Pegunungan (Rp 6.000)</a></li>
-                                        <li><a href="#layanan">Air Murni Reverse Osmosis (Rp 8.000)</a></li>
-                                        <li><a href="#layanan">Air Sehat Bio-Alkali pH 8.5+ (Rp 15.000)</a></li>
-                                        <li><a href="#layanan">Pasokan Galon Kantor & Usaha (B2B)</a></li>
-                                        <li><a href="#layanan">Pembersihan & Sterilisasi Galon</a></li>
+                                        <li><a href="#produk">Air Mineral Alami (Rp 6.000)</a></li>
+                                        <li><a href="#produk">Air Murni RO (Rp 8.000)</a></li>
+                                        <li><a href="#produk">Air Bio-Alkali pH 8.5+ (Rp 15.000)</a></li>
+                                        <li><a href="#produk">Kupon Hemat 10+1 (Rp 60.000)</a></li>
+                                        <li><a href="#produk">Langganan Kantor B2B (Rp 150.000)</a></li>
+                                        <li><a href="#produk">Galon Baru + Isi RO (Rp 55.000)</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1682,15 +1007,15 @@
                         <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                             <div class="footer-widget subscribe-widget">
                                 <div class="widget-title">
-                                    <h4>Pesan Kilat WA</h4>
+                                    <h4>Pesan Kilat via WA</h4>
                                 </div>
                                 <div class="widget-content">
-                                    <p>Ketik nomor WhatsApp Anda atau klik tombol di bawah untuk pesan antar galon cepat tanpa antre.</p>
+                                    <p>Tulis alamat lengkap dan jumlah galon Anda di bawah ini untuk langsung terhubung ke WhatsApp kurir kami.</p>
                                     <div class="form-inner">
-                                        <form action="https://wa.me/62895323418658" method="get" target="_blank">
+                                        <form action="https://wa.me/62895323418658" method="get" target="_blank" class="wa-order-form">
                                             <div class="form-group">
-                                                <input type="text" name="text" placeholder="Tulis alamat atau jumlah galon..." required="">
-                                                <button type="submit"><i class="far fa-long-arrow-alt-right"></i></button>
+                                                <input type="text" name="alamat" placeholder="Contoh: 2 Galon RO ke Jl. Melati No. 5" required="">
+                                                <button type="submit" aria-label="Kirim Pesanan via WhatsApp"><i class="far fa-long-arrow-alt-right"></i></button>
                                             </div>
                                         </form>
                                     </div>
@@ -1703,17 +1028,15 @@
             <div class="footer-bottom">
                 <div class="auto-container">
                     <div class="bottom-inner">
-                        <div class="copyright">
-                            <p><a href="index.html">evevdepot</a> &copy; 2026 Hak Cipta Dilindungi. Didukung oleh Sistem EvEvDigital.</p>
-                        </div>
+                        <div class="copyright"><p>&copy; 2026 <strong>evevdepot</strong>. Seluruh Hak Cipta Dilindungi. Ditenagai oleh <strong>EvEvDigital</strong>.</p></div>
                         <ul class="social-links clearfix">
-                            <li><a href="https://wa.me/62895323418658" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                            <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://wa.me/62895323418658" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp evevdepot"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#kontak" aria-label="Instagram evevdepot"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#kontak" aria-label="Facebook evevdepot"><i class="fab fa-facebook-f"></i></a></li>
                         </ul>
                         <ul class="footer-nav clearfix">
                             <li><a href="#keunggulan">Standar Higienis Dinkes</a></li>
-                            <li><a href="#tentang">Kebijakan Kualitas</a></li>
+                            <li><a href="#tentang">Jaminan Kualitas Air</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1721,97 +1044,41 @@
         </footer>
         <!-- main-footer end -->
 
-
-
-
-
-
-
         <!--Scroll to top-->
-
-        <button class="scroll-top scroll-to-target" data-target="html">
-
+        <button class="scroll-top scroll-to-target" data-target="html" aria-label="Kembali ke Atas">
             <span class="fal fa-angle-up"></span>
-
         </button>
 
     </div>
 
-
-
-
-
-    <!-- jequery plugins -->
-
+    <!-- jQuery plugins -->
     <script src="assets/js/jquery.js"></script>
-
     <script src="assets/js/popper.min.js"></script>
-
     <script src="assets/js/bootstrap.min.js"></script>
-
     <script src="assets/js/owl.js"></script>
-
     <script src="assets/js/wow.js"></script>
-
     <script src="assets/js/validation.js"></script>
-
     <script src="assets/js/jquery.fancybox.js"></script>
-
     <script src="assets/js/appear.js"></script>
-
     <script src="assets/js/scrollbar.js"></script>
-
     <script src="assets/js/jquery-ui.js"></script>
-
     <script src="assets/js/jquery.nice-select.min.js"></script>
 
-
-
-    <!-- main-js -->
-
+    <!-- main-js & EvEvDigital Engine -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/profil-usaha.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
 
-
-
-
-    <!-- Floating WhatsApp Widget -->
-    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot,%20saya%20ingin%20pesan%20galon" class="floating-wa" target="_blank" rel="noopener noreferrer" style="position:fixed;bottom:25px;right:25px;z-index:9999;background-color:#25d366;color:#ffffff;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(0,0,0,0.3);text-decoration:none;font-size:32px;transition:all 0.3s ease;">
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/62895323418658?text=Halo%20evevdepot%2C%20saya%20ingin%20pesan%20antar%20air%20galon." data-wa-paket="Pesan Antar Air Galon" class="floating-wa-pill" target="_blank" rel="noopener noreferrer" aria-label="Pesan Air Galon via WhatsApp">
         <i class="fab fa-whatsapp"></i>
+        <span>Pesan Galon WA</span>
     </a>
 
     <!-- Theme Toggle Floating Button -->
-    <button id="themeToggleBtn" onclick="toggleThemeMode()" title="Ganti Mode Terang/Gelap" style="position:fixed;bottom:95px;right:28px;z-index:9999;background:#007bff;color:#ffffff;border:none;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.25);cursor:pointer;font-size:22px;transition:all 0.3s ease;">
+    <button id="themeToggleBtn" type="button" data-theme-toggle="true" title="Ganti Mode Terang/Gelap" aria-label="Ganti Mode Terang atau Gelap" aria-pressed="false">
         <i class="fas fa-moon" id="themeToggleIcon"></i>
     </button>
 
-    <script>
-    function toggleThemeMode() {
-        const body = document.body;
-        const icon = document.getElementById('themeToggleIcon');
-        body.classList.toggle('dark-mode');
-        if (body.classList.contains('dark-mode')) {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-            localStorage.setItem('evevdepot_theme', 'dark');
-        } else {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-            localStorage.setItem('evevdepot_theme', 'light');
-        }
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-        if (localStorage.getItem('evevdepot_theme') === 'dark') {
-            document.body.classList.add('dark-mode');
-            const icon = document.getElementById('themeToggleIcon');
-            if (icon) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            }
-        }
-    });
-    </script>
-
-</body><!-- End of .page_wrapper -->
-
+</body>
 </html>
-

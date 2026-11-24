@@ -1,0 +1,606 @@
+/* =====================================================================
+   EvEvDigital Dual Theme Engine (Dark & Light Mode) — WCAG AAA (> 7:1)
+   Sektor 09: Depot Air Minum Isi Ulang & Galon Delivery (evevdepot)
+   ===================================================================== */
+
+:root {
+  --theme-transition: background-color 0.28s ease, color 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f1f5f9;
+  --text-main: #0f172a;
+  --text-body: #1e293b;
+  --text-muted: #334155;
+  --accent-primary: #075985;
+  --accent-hover: #0c4a6e;
+  --border-color: #cbd5e1;
+  --badge-bg: #e0f2fe;
+  --badge-text: #0c4a6e;
+  --spec-bg: #f0fdfa;
+  --spec-text: #115e59;
+  --input-bg: #ffffff;
+  --input-border: #94a3b8;
+  --input-text: #0f172a;
+  --input-placeholder: #334155;
+  --wa-bg: #166534;
+  --wa-hover: #14532d;
+  --wa-text: #ffffff;
+}
+
+/* Anti-FOUC: matikan transisi saat initial paint agar tidak berkedip */
+.no-theme-transition,
+.no-theme-transition *,
+.no-theme-transition *::before,
+.no-theme-transition *::after {
+  transition: none !important;
+}
+
+/* Smooth theme transition */
+html,
+body,
+.boxed_wrapper,
+.main-header,
+.sticky-header,
+section,
+.inner-box,
+.card,
+.pricing-table,
+.shop-block-one .inner-box,
+.feature-block-one .inner-box,
+.testimonial-block-one .inner-box,
+.news-block-one .inner-box,
+.service-block-one .inner-box,
+.team-block-one .inner-box,
+input,
+textarea,
+select {
+  transition: var(--theme-transition);
+}
+
+/* =====================================================================
+   LIGHT MODE HIGH-CONTRAST BASE (Rasio > 7:1)
+   ===================================================================== */
+[data-theme="light"] body,
+body:not(.dark-mode) {
+  background-color: var(--bg-primary);
+  color: var(--text-body);
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+  color: var(--text-main);
+}
+
+[data-theme="light"] p,
+[data-theme="light"] .text p,
+[data-theme="light"] .designation {
+  color: var(--text-muted);
+}
+
+/* Pastikan teks di atas banner gelap / section light tetap tajam */
+.sec-title.light h2,
+.sec-title.light h3,
+.sec-title.light p,
+.cta-section .sec-title.light h2,
+.cta-section .content-box p,
+.cta-section .content-box li,
+.chooseus-section .sec-title.light h2,
+.chooseus-section .content-box h4,
+.chooseus-section .content-box p,
+.banner-style-two .content-box h2,
+.banner-style-two .content-box p {
+  color: #ffffff !important;
+}
+
+/* =====================================================================
+   DARK MODE OVERRIDES (Rasio > 7:1 di seluruh elemen)
+   ===================================================================== */
+[data-theme="dark"],
+body.dark-mode {
+  --bg-primary: #0b1120;
+  --bg-secondary: #111827;
+  --bg-surface: #162033;
+  --bg-subtle: #1e293b;
+  --text-main: #f8fafc;
+  --text-body: #e2e8f0;
+  --text-muted: #cbd5e1;
+  --accent-primary: #7dd3fc;
+  --accent-hover: #bae6fd;
+  --border-color: #334155;
+  --badge-bg: #0c4a6e;
+  --badge-text: #e0f2fe;
+  --spec-bg: #134e4a;
+  --spec-text: #f0fdfa;
+  --input-bg: #0f172a;
+  --input-border: #475569;
+  --input-text: #f8fafc;
+  --input-placeholder: #cbd5e1;
+}
+
+[data-theme="dark"],
+[data-theme="dark"] body,
+body.dark-mode {
+  background-color: #0b1120 !important;
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .boxed_wrapper,
+[data-theme="dark"] .page-wrapper,
+[data-theme="dark"] .main-header,
+[data-theme="dark"] .header-top,
+[data-theme="dark"] .header-upper,
+[data-theme="dark"] .header-lower,
+[data-theme="dark"] .sticky-header,
+[data-theme="dark"] .about-section,
+[data-theme="dark"] .about-style-two,
+[data-theme="dark"] .feature-section,
+[data-theme="dark"] .service-section,
+[data-theme="dark"] .services-section,
+[data-theme="dark"] .shop-section,
+[data-theme="dark"] .pricing-section,
+[data-theme="dark"] .team-section,
+[data-theme="dark"] .news-section,
+[data-theme="dark"] .faq-section,
+[data-theme="dark"] .contact-section,
+[data-theme="dark"] .cta-style-two,
+[data-theme="dark"] .bg-color-1,
+body.dark-mode .boxed_wrapper,
+body.dark-mode .main-header,
+body.dark-mode .header-lower,
+body.dark-mode .sticky-header,
+body.dark-mode .about-section,
+body.dark-mode .about-style-two,
+body.dark-mode .feature-section,
+body.dark-mode .service-section,
+body.dark-mode .shop-section,
+body.dark-mode .pricing-section,
+body.dark-mode .team-section,
+body.dark-mode .news-section,
+body.dark-mode .contact-section,
+body.dark-mode .cta-style-two,
+body.dark-mode .bg-color-1 {
+  background-color: #0b1120 !important;
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .testimonial-section,
+[data-theme="dark"] .testimonial-style-two,
+body.dark-mode .testimonial-section,
+body.dark-mode .testimonial-style-two {
+  background-color: #111827 !important;
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .feature-section .inner-container,
+[data-theme="dark"] .feature-block-one .inner-box,
+[data-theme="dark"] .service-block-one .inner-box,
+[data-theme="dark"] .shop-block-one .inner-box,
+[data-theme="dark"] .testimonial-block-one .inner-box,
+[data-theme="dark"] .testimonial-block-two .inner-box,
+[data-theme="dark"] .team-block-one .inner-box,
+[data-theme="dark"] .news-block-one .inner-box,
+[data-theme="dark"] .pricing-table,
+[data-theme="dark"] .content_block_5 .form-inner,
+[data-theme="dark"] .main-menu .navigation > li > ul,
+[data-theme="dark"] .main-header .search-box-outer .dropdown-menu,
+body.dark-mode .feature-section .inner-container,
+body.dark-mode .feature-block-one .inner-box,
+body.dark-mode .service-block-one .inner-box,
+body.dark-mode .shop-block-one .inner-box,
+body.dark-mode .testimonial-block-one .inner-box,
+body.dark-mode .testimonial-block-two .inner-box,
+body.dark-mode .team-block-one .inner-box,
+body.dark-mode .news-block-one .inner-box,
+body.dark-mode .pricing-table,
+body.dark-mode .content_block_5 .form-inner,
+body.dark-mode .main-menu .navigation > li > ul,
+body.dark-mode .main-header .search-box-outer .dropdown-menu {
+  background-color: #162033 !important;
+  color: #e2e8f0 !important;
+  border-color: #334155 !important;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38) !important;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] .sec-title h2,
+[data-theme="dark"] .title-text h2,
+[data-theme="dark"] .main-menu .navigation > li > a,
+[data-theme="dark"] .main-menu .navigation > li > ul > li > a,
+[data-theme="dark"] .shop-block-one .lower-content h4 a,
+[data-theme="dark"] .news-block-one .lower-content h4 a,
+[data-theme="dark"] .team-block-one .lower-content h4 a,
+[data-theme="dark"] .service-block-one h4 a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode .main-menu .navigation > li > a,
+body.dark-mode .main-menu .navigation > li > ul > li > a,
+body.dark-mode .shop-block-one .lower-content h4 a,
+body.dark-mode .news-block-one .lower-content h4 a,
+body.dark-mode .team-block-one .lower-content h4 a,
+body.dark-mode .service-block-one h4 a {
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] .text,
+[data-theme="dark"] .text p,
+[data-theme="dark"] .designation,
+[data-theme="dark"] .post-info li,
+[data-theme="dark"] .post-info li a,
+[data-theme="dark"] .cta-style-two .list li,
+[data-theme="dark"] .feature-list li,
+body.dark-mode p,
+body.dark-mode .text,
+body.dark-mode .text p,
+body.dark-mode .designation,
+body.dark-mode .post-info li,
+body.dark-mode .post-info li a,
+body.dark-mode .cta-style-two .list li,
+body.dark-mode .feature-list li {
+  color: #e2e8f0 !important;
+}
+
+[data-theme="dark"] .main-header .search-box-btn,
+[data-theme="dark"] .main-header .cart-box a,
+[data-theme="dark"] .mobile-nav-toggler,
+body.dark-mode .main-header .search-box-btn,
+body.dark-mode .main-header .cart-box a {
+  color: #f8fafc !important;
+}
+
+[data-theme="dark"] .mobile-nav-toggler .icon-bar,
+body.dark-mode .mobile-nav-toggler .icon-bar {
+  background-color: #f8fafc !important;
+}
+
+[data-theme="dark"] input[type="text"],
+[data-theme="dark"] input[type="email"],
+[data-theme="dark"] input[type="tel"],
+[data-theme="dark"] input[type="search"],
+[data-theme="dark"] input[type="number"],
+[data-theme="dark"] textarea,
+[data-theme="dark"] select,
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="tel"],
+body.dark-mode input[type="search"],
+body.dark-mode input[type="number"],
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border: 1px solid #475569 !important;
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder,
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #cbd5e1 !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] .theme-btn.btn-two,
+body.dark-mode .theme-btn.btn-two {
+  background-color: #075985 !important;
+  color: #ffffff !important;
+  border-color: #075985 !important;
+}
+
+[data-theme="dark"] .theme-btn.btn-two:hover,
+body.dark-mode .theme-btn.btn-two:hover {
+  background-color: #0c4a6e !important;
+  color: #ffffff !important;
+}
+
+/* =====================================================================
+   SOLID HIGH-CONTRAST FOOTER (#070A0E) — ANTI BURAM (> 13:1)
+   ===================================================================== */
+footer,
+.main-footer,
+.footer-bottom,
+[data-theme="light"] .main-footer,
+[data-theme="light"] .footer-bottom,
+[data-theme="dark"] .main-footer,
+[data-theme="dark"] .footer-bottom {
+  background-color: #070a0e !important;
+  color: #f1f5f9 !important;
+  border-top: 1px solid #1e293b !important;
+}
+
+.main-footer h1,
+.main-footer h2,
+.main-footer h3,
+.main-footer h4,
+.main-footer h5,
+.main-footer h6,
+.main-footer .footer-title,
+.main-footer .widget-title h4 {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+.main-footer p,
+.main-footer span,
+.main-footer li,
+.main-footer .text,
+.footer-bottom p {
+  color: #f1f5f9 !important;
+  opacity: 1 !important;
+}
+
+.main-footer a {
+  color: #cbd5e1 !important;
+  transition: color 0.2s ease;
+}
+
+.main-footer a:hover {
+  color: #7dd3fc !important;
+}
+
+/* =====================================================================
+   SIMETRI KARTU LAYANAN & HARGA (100% TERBACA TANPA TERPOTONG)
+   ===================================================================== */
+.shop-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shop-block {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.shop-block-one {
+  width: 100%;
+  display: flex;
+}
+
+.shop-block-one .inner-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-surface);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+
+.shop-block-one .inner-box .image-box {
+  margin: 0;
+  overflow: hidden;
+  height: 230px;
+  background-color: var(--bg-subtle);
+}
+
+.shop-block-one .inner-box .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.shop-block-one .inner-box .lower-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 24px 26px !important;
+  overflow: visible !important;
+  height: auto !important;
+  text-align: left;
+}
+
+.produk-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  background-color: var(--badge-bg);
+  color: var(--badge-text) !important;
+  margin-bottom: 10px;
+}
+
+.produk-kemasan {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted) !important;
+  margin-bottom: 6px;
+}
+
+.shop-block-one .inner-box .lower-content h4 {
+  font-size: 20px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+  overflow: visible;
+  white-space: normal;
+}
+
+.produk-harga {
+  display: block;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--accent-primary) !important;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.produk-spec {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--spec-text) !important;
+  background-color: var(--spec-bg);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 14px;
+  line-height: 1.45;
+}
+
+.shop-block-one .inner-box .lower-content p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-muted) !important;
+  margin-bottom: 20px;
+  overflow: visible;
+  display: block;
+  -webkit-line-clamp: unset;
+}
+
+.shop-block-one .inner-box .lower-content .btn-box {
+  margin-top: auto;
+}
+
+.shop-block-one .inner-box .lower-content .btn-box a {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #075985;
+  color: #ffffff !important;
+  border: 1px solid #075985;
+}
+
+.shop-block-one .inner-box .lower-content .btn-box a:hover {
+  background-color: #0c4a6e;
+  border-color: #0c4a6e;
+  color: #ffffff !important;
+}
+
+/* =====================================================================
+   PHOTO UTILITIES & FLOATING CONTROLS (CONTRAST > 7:1)
+   ===================================================================== */
+.service-photo,
+.portfolio-photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.service-photo:hover,
+.portfolio-photo:hover {
+  transform: scale(1.03);
+}
+
+/* Floating WhatsApp Button (Contrast #ffffff on #166534 = 7.13:1 AAA) */
+.floating-wa-btn,
+.floating-wa-pill,
+.wa-floating,
+.wa-float-pill {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  background-color: var(--wa-bg);
+  color: var(--wa-text) !important;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(22, 101, 52, 0.42);
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.floating-wa-btn:hover,
+.floating-wa-pill:hover,
+.wa-floating:hover,
+.wa-float-pill:hover {
+  background-color: var(--wa-hover);
+  color: #ffffff !important;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(20, 83, 45, 0.55);
+}
+
+.floating-wa-btn i,
+.floating-wa-pill i {
+  font-size: 21px;
+}
+
+/* Theme Toggle Button (Contrast > 7:1 in both modes) */
+.theme-toggle-btn,
+#themeToggleBtn,
+#theme-toggle {
+  position: fixed;
+  bottom: 84px;
+  right: 24px;
+  z-index: 99999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background-color: #075985;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  box-shadow: 0 6px 18px rgba(7, 89, 133, 0.35);
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+}
+
+[data-theme="dark"] .theme-toggle-btn,
+[data-theme="dark"] #themeToggleBtn,
+[data-theme="dark"] #theme-toggle,
+body.dark-mode #themeToggleBtn {
+  background-color: #7dd3fc;
+  color: #0b1120;
+  border-color: #bae6fd;
+  box-shadow: 0 6px 18px rgba(125, 211, 252, 0.35);
+}
+
+.theme-toggle-btn:hover,
+#themeToggleBtn:hover,
+#theme-toggle:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 575px) {
+  .floating-wa-pill span,
+  .floating-wa-btn span {
+    display: none;
+  }
+  .floating-wa-pill,
+  .floating-wa-btn {
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    justify-content: center;
+    bottom: 20px;
+    right: 18px;
+  }
+  #themeToggleBtn,
+  #theme-toggle {
+    bottom: 86px;
+    right: 22px;
+  }
+}

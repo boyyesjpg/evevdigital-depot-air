@@ -1,820 +1,786 @@
-/* Responsive Css */
+/* =====================================================================
+   EvEvDigital Responsive & Mobile Ergonomics CSS (360px - 414px Ready)
+   Sektor 09: Depot Air Minum Isi Ulang & Galon Delivery (evevdepot)
+   Zero Horizontal Overflow | Thumb-Friendly CTA (>= 48px) | Anti-Clipping
+   ===================================================================== */
 
+/* =====================================================================
+   GLOBAL ZERO HORIZONTAL OVERFLOW & ANTI-CLIPPING GUARDRAILS
+   ===================================================================== */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+  -webkit-text-size-adjust: 100%;
+}
 
+.boxed_wrapper,
+.page-wrapper {
+  max-width: 100%;
+  overflow-x: hidden !important;
+  position: relative;
+}
 
-@media only screen and (max-width: 1599px){
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
 
-  .main-header .outer-box{
+/* Override rule usang (max-width: 0, overflow: hidden, fixed height, line-clamp)
+   agar nama menu, layanan, paket, dan harga 100% terbaca utuh tanpa terpotong */
+.shop-block-one .inner-box .lower-content,
+.shop-block-one .inner-box .lower-content h4,
+.shop-block-one .inner-box .lower-content h4 a,
+.shop-block-one .inner-box .lower-content h6,
+.shop-block-one .inner-box .lower-content .produk-harga,
+.shop-block-one .inner-box .lower-content .produk-kemasan,
+.shop-block-one .inner-box .lower-content .produk-spec,
+.shop-block-one .inner-box .lower-content p,
+.pricing-table .table-header,
+.pricing-table .table-header .price-box,
+.pricing-table .table-header .price-box h3,
+.pricing-table .table-header .title h3,
+.pricing-table .table-content .feature-list li,
+.service-block-one .inner-box h4,
+.service-block-one .inner-box p,
+.feature-block-one .inner-box h4,
+.feature-block-one .inner-box p,
+.main-footer .links-list li a {
+  max-width: none !important;
+  max-height: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  white-space: normal !important;
+  text-overflow: clip !important;
+  -webkit-line-clamp: unset !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Thumb-Friendly Minimum Hit Target (>= 48px) untuk seluruh CTA & kontrol interaktif */
+.theme-btn,
+.btn-one,
+.btn-two,
+.banner-btn,
+.shop-block-one .btn-box a,
+.pricing-table .table-footer a,
+.tab-btns .tab-btn,
+button[type="submit"],
+.mobile-nav-toggler {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.default-form input[type="text"],
+.default-form input[type="email"],
+.default-form input[type="tel"],
+.default-form input[type="number"],
+.default-form select,
+.subscribe-widget .form-group input[type="text"],
+.search-form input[type="search"] {
+  min-height: 48px;
+  font-size: 16px; /* Cegah auto-zoom iOS Safari */
+}
+
+/* =====================================================================
+   DESKTOP & TABLET BREAKPOINTS (DIPERTAHANKAN & DISEMPURNAKAN)
+   ===================================================================== */
+@media only screen and (max-width: 1599px) {
+  .main-header .outer-box {
     padding: 0px 30px;
   }
 
-  .main-header .nav-right li.btn-box{
+  .main-header .nav-right li.btn-box {
     display: none;
   }
 
-  .main-header .nav-right li.cart-box{
+  .main-header .nav-right li.cart-box {
     margin-right: 0px;
   }
 
-  .rtl .main-header .nav-right li.cart-box{
+  .rtl .main-header .nav-right li.cart-box {
     margin-left: 0px;
   }
 
-  .main-header .header-lower .shape{
+  .main-header .header-lower .shape {
     background-size: cover;
   }
-
 }
 
-
-@media only screen and (max-width: 1399px){
-
-
-
-}
-
-
-@media only screen and (max-width: 1200px){
-
+@media only screen and (max-width: 1200px) {
   .main-menu,
   .sticky-header,
-  .main-header.style-one .outer-container:before{
+  .main-header.style-one .outer-container:before {
     display: none !important;
   }
 
   .menu-area .mobile-nav-toggler {
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
     padding: 10px;
   }
 
-  .megamenu ul li:first-child{
+  .megamenu ul li:first-child {
     display: none;
   }
 
-  .about-section .image-box img{
+  .about-section .image-box img {
     max-width: 100%;
   }
 
-  .about-section .content_block_1 .content-box{
+  .about-section .content_block_1 .content-box {
     margin-left: 0px;
   }
 
-  .chooseus-section .image-box{
+  .chooseus-section .image-box {
     margin-right: 0px;
   }
 
-  .team-block-one .inner-box .image-box .social-links li{
+  .team-block-one .inner-box .image-box .social-links li {
     margin: 0px 3px;
   }
 
-  .team-block-one .inner-box{
+  .team-block-one .inner-box {
     padding-left: 30px;
     padding-right: 30px;
   }
 
   .cta-section .pattern-layer .pattern-3,
-  .cta-section .pattern-layer .pattern-4{
+  .cta-section .pattern-layer .pattern-4 {
     background-size: cover;
   }
 
-  .cta-section .image-box img{
+  .cta-section .image-box img {
     max-width: 100%;
   }
 
-  .cta-section .image-box{
+  .cta-section .image-box {
     margin-right: 0px;
   }
 
-  .main-footer .footer-top .text{
+  .main-footer .footer-top .text {
     float: none;
     display: block;
     margin-bottom: 15px;
   }
 
-  .main-footer .footer-top .support-box{
+  .main-footer .footer-top .support-box {
     float: none;
     display: block;
   }
 
-  .main-footer .pattern-layer .pattern-3{
+  .main-footer .pattern-layer .pattern-3 {
     background-size: cover;
   }
 
   .banner-carousel .inner-box .image-box,
-  .banner-carousel .owl-nav{
+  .banner-carousel .owl-nav {
     display: none;
   }
 
-  .banner-carousel .content-box{
+  .banner-carousel .content-box {
     max-width: 100%;
   }
 
-  .about-style-two .content-box .text{
+  .about-style-two .content-box .text {
     margin-left: 0px;
   }
 
-  .image_block_2 .image-box .image-1 img{
+  .image_block_2 .image-box .image-1 img {
     max-width: 100%;
   }
 
-  .testimonial-style-two .thumb-box{
+  .testimonial-style-two .thumb-box {
     display: none;
   }
 
-  .image_block_1 .image-box{
+  .image_block_1 .image-box {
     padding-right: 0px;
   }
 
-  .rtl .main-footer .footer-top .support-box{
+  .rtl .main-footer .footer-top .support-box {
     float: right !important;
   }
 
-  .faq-sidebar{
+  .faq-sidebar,
+  .service-sidebar,
+  .product-details-content .product-details,
+  .blog-sidebar {
     margin-left: 0px;
   }
 
-  .page-title .shape{
-    background-size: cover;
-  }
-
-  .service-sidebar{
-    margin-left: 0px;
-  }
-
-  .shop-sidebar{
+  .shop-sidebar {
     margin-right: 0px;
   }
 
-  .product-details-content .product-details{
-    margin-left: 0px;
-  }
-
-  .blog-sidebar{
-    margin-left: 0px;
-  }
-
-  .contact-style-two .info-inner .shape{
-    right: 30px;
-  }
-
-  .feature-section.light .pattern-layer .pattern-1{
+  .page-title .shape,
+  .feature-section.light .pattern-layer .pattern-1 {
     background-size: cover;
   }
 
-
-}
-
-
-
-@media only screen and (min-width: 768px){
-  .main-menu .navigation > li > ul,
-  .main-menu .navigation > li > ul > li > ul,
-  .main-menu .navigation > li > .megamenu{
-    display:block !important;
-    visibility:hidden;
-    opacity:0;
+  .contact-style-two .info-inner .shape {
+    right: 30px;
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .main-menu .navigation > li > ul,
+  .main-menu .navigation > li > ul > li > ul,
+  .main-menu .navigation > li > .megamenu {
+    display: block !important;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 
-
-@media only screen and (max-width: 991px){
-
-  .feature-block-one .inner-box{
+@media only screen and (max-width: 991px) {
+  .feature-block-one .inner-box {
     margin-bottom: 30px;
   }
 
-  .feature-section .inner-container{
+  .feature-section .inner-container {
     padding-bottom: 63px;
   }
 
-  .about-section .image-box{
+  .about-section .image-box {
     margin-bottom: 30px;
   }
 
-  .sec-title h2 br{
+  .sec-title h2 br {
     display: none !important;
   }
 
-  .service-section{
-    padding-top: 150px;
+  .service-section {
+    padding-top: 120px;
   }
 
-  .service-section .image-layer{
+  .service-section .image-layer {
     display: none;
   }
 
-  .service-section .left-column{
+  .service-section .left-column {
     padding: 0px;
+    text-align: left !important;
   }
 
-  .service-block-one{
+  .service-block-one {
     margin: 0 auto !important;
     left: 0px !important;
     right: 0px !important;
   }
 
-  .service-section .right-column{
+  .service-section .right-column {
     padding-left: 0px;
   }
 
-  .shop-block-one .inner-box{
+  .shop-block-one .inner-box,
+  .team-block-one .inner-box,
+  .news-block-one .inner-box,
+  .testimonial-block-one .inner-box,
+  .testimonial-style-three .inner-box {
     margin-bottom: 30px;
   }
 
-  .shop-section{
-    padding-bottom: 120px;
+  .shop-section,
+  .team-section,
+  .news-section,
+  .testimonial-section.testimonial-page,
+  .testimonial-style-three {
+    padding-bottom: 90px;
   }
 
-  .testimonial-section .owl-dots{
+  .testimonial-section .owl-dots,
+  .testimonial-style-two .map-layer,
+  .testimonial-style-two .pattern-layer,
+  .testimonial-style-two .owl-dots,
+  .image_block_1 .image-box,
+  .contact-style-two .info-inner .shape {
     display: none;
   }
 
-  .team-block-one .inner-box{
-    margin-bottom: 30px;
-  }
-
-  .team-section{
-    padding-bottom: 120px;
-  }
-
-  .cta-section .image-box img{
+  .cta-section .image-box img {
     float: none;
   }
 
-  .cta-section .image-box{
+  .cta-section .image-box {
     margin-bottom: 30px;
   }
 
-  .news-block-one .inner-box{
-    margin-bottom: 30px;
-  }
-
-  .news-section{
-    padding-bottom: 120px;
-  }
-
-  .main-footer .footer-widget{
+  .main-footer .footer-widget {
     margin: 0px 0px 30px 0px !important;
   }
 
-  .main-footer .widget-section{
-    padding-bottom: 50px;
+  .main-footer .widget-section {
+    padding-bottom: 40px;
   }
 
-  .about-style-two .sec-title{
+  .about-style-two .sec-title {
     margin-bottom: 20px;
   }
 
-  .image_block_1 .image-box{
-    display: none;
+  .cta-style-two {
+    padding: 100px 0px;
   }
 
-  .cta-style-two{
-    padding: 145px 0px 150px 0px;
-  }
-
-  .contact-section .title-inner{
+  .contact-section .title-inner {
     margin-right: 0px;
     margin-bottom: 30px;
   }
 
-  .image_block_2 .image-box{
+  .image_block_2 .image-box {
     margin-right: 0px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
-  .pricing-section .inner-box{
+  .pricing-section .inner-box {
     padding-left: 0px;
-    margin-top: 50px;
+    margin-top: 40px;
+    overflow: hidden;
   }
 
+  /* Cegah horizontal overflow dari animasi tab pricing usang */
   .pricing-section .pr-content .pr-tab {
-    -webkit-transform: scale(0.9,0.9) translateX(300px);
-    -ms-transform: scale(0.9,0.9) translateX(300px);
-    -o-transform: scale(0.9,0.9) translateX(300px);
-    -moz-transform: scale(0.9,0.9) translateX(300px);
-    transform: scale(0.9,0.9) translateX(300px);
+    -webkit-transform: none !important;
+    transform: none !important;
   }
 
-  .rtl .cta-style-two .content_block_4 .content-box{
+  .rtl .cta-style-two .content_block_4 .content-box {
     margin-right: 0px;
   }
 
-  .testimonial-block-one .inner-box{
-    margin-bottom: 30px;
-  }
-
-  .testimonial-section.testimonial-page{
-    padding-bottom: 120px;
-  }
-
-  .testimonial-style-two.testimonial-page{
+  .testimonial-style-two.testimonial-page {
     padding: 0px;
     background: transparent;
   }
 
-  .testimonial-style-two .map-layer{
-    display: none;
-  }
-
-  .testimonial-style-two .pattern-layer{
-    display: none;
-  }
-
-  .testimonial-style-two .owl-dots{
-    display: none;
-  }
-
-  .testimonial-style-three .inner-box{
-    margin-bottom: 30px;
-  }
-
-  .testimonial-style-three{
-    padding-bottom: 120px;
-  }
-
-  .faq-content{
+  .faq-content {
     margin-right: 0px;
     margin-bottom: 40px;
   }
 
-  .service-details-content{
-    margin-bottom: 30px;
-  }
-
-  .shop-sidebar{
-    margin-bottom: 30px;
-  }
-
-  .product-details-content .image-box{
+  .service-details-content,
+  .shop-sidebar,
+  .product-details-content .image-box {
     margin-right: 0px;
     margin-bottom: 30px;
   }
 
-  .checkout-section .additional-info{
+  .checkout-section .additional-info {
     margin-bottom: 50px;
   }
 
-  .blog-sidebar{
+  .blog-sidebar {
     margin-top: 50px;
   }
-
-  .contact-style-two .info-inner .shape{
-    display: none;
-  }
-
 }
 
-
-@media only screen and (max-width: 767px){
-
-  .sec-pad{
-    padding: 65px 0px 70px 0px;
+/* =====================================================================
+   MOBILE TABLET & SMARTPHONE (<= 767px)
+   ===================================================================== */
+@media only screen and (max-width: 767px) {
+  .sec-pad {
+    padding: 60px 0px;
   }
 
-  .banner-carousel .content-box h2{
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .banner-carousel .content-box{
-    padding: 180px 0px 200px 0px;
-  }
-
-  .feature-block-one .inner-box .shape{
-    display: none;
-  }
-
-  .feature-section .inner-container{
-    padding: 70px 30px 40px 30px;
-  }
-
-  .about-section{
-    padding: 70px 0px;
-  }
-
-  .sec-title h2{
+  .banner-carousel .content-box h2 {
     font-size: 32px;
-    line-height: 40px;
+    line-height: 1.25;
   }
 
-  .service-block-one .inner-box{
-    margin-bottom: 30px;
+  .banner-carousel .content-box {
+    padding: 150px 0px 140px 0px;
   }
 
-  .service-section .shape{
+  .banner-style-two .banner-carousel .content-box {
+    padding: 165px 0px 130px 0px;
+  }
+
+  .feature-block-one .inner-box .shape,
+  .service-section .shape,
+  .testimonial-section .shape-layer,
+  .main-footer .pattern-layer,
+  .about-style-two .pattern-layer,
+  .cta-style-two .bg-layer,
+  .testimonial-section.alternat-2 .owl-dots,
+  .shop-section .pattern-layer {
     display: none;
   }
 
-  .service-section{
-    padding: 70px 0px 40px 0px;
+  .feature-section .inner-container {
+    padding: 56px 20px 30px 20px;
   }
 
-  .chooseus-section .image-box{
-    top: 0px;
-    margin-top: 30px;
+  .about-section,
+  .cta-style-two,
+  .cta-section,
+  .contact-section,
+  .pricing-section {
+    padding: 60px 0px;
   }
 
-  .chooseus-section{
-    padding: 70px 0px 120px 0px;
+  .sec-title h2,
+  .feature-section .title-text h2 {
+    font-size: 28px;
+    line-height: 1.3;
   }
 
+  .service-block-one .inner-box {
+    margin-bottom: 24px;
+  }
+
+  .service-section,
   .shop-section,
-  .news-section{
-    padding: 65px 0px 40px 0px;
+  .news-section,
+  .testimonial-section,
+  .testimonial-section.alternat-2,
+  .team-section,
+  .feature-section.alternat-2 {
+    padding: 60px 0px 40px 0px;
   }
 
-  .testimonial-section .shape-layer{
-    display: none;
+  .chooseus-section .image-box {
+    top: 0px;
+    margin-top: 28px;
   }
 
-  .testimonial-section{
-    padding: 70px 0px 40px 0px;
+  .chooseus-section {
+    padding: 60px 0px 80px 0px;
   }
 
-  .team-section{
-    padding: 65px 0px 40px 0px;
-  }
-
-  .main-footer .pattern-layer{
-    display: none;
-  }
-
-  .main-footer .footer-top{
-    padding-top: 90px;
-  }
-
-  .footer-bottom .bottom-inner{
-    display: block;
-    text-align: center;
-  }
-
-  .banner-style-two .banner-carousel .content-box{
-    padding: 200px 0px;
-  }
-
-  .feature-section.alternat-2{
-    padding: 65px 0px 40px 0px;
-  }
-
-  .about-style-two .pattern-layer{
-    display: none;
-  }
-
-  .about-style-two{
-    padding-top: 70px;
-    background-color: #f2f9ff;
-  }
-
-  .pt-145{
-    padding-top: 65px !important;
-  }
-
-  .cta-style-two .bg-layer{
-    display: none;
-  }
-
-  .cta-style-two{
-    padding: 70px 0px;
-  }
-
-  .testimonial-section.alternat-2{
-    padding: 70px 0px 40px 0px;
-  }
-
-  .testimonial-section.alternat-2 .owl-dots{
-    display: none;
-  }
-
-  .shop-section .pattern-layer{
-    display: none;
-  }
-
-  .pricing-section{
-    padding-bottom: 70px;
-  }
-
-  .testimonial-style-two{
-    padding: 70px 0px 300px 0px;
-  }
-
-  .page-title{
-    padding: 150px 0px 90px 0px;
-  }
-
-  .page-title h1{
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .team-page-section .team-block-one .inner-box{
-    margin-bottom: 30px;
-  }
-
-  .pt-170{
-    padding-top: 70px;
-  }
-
-  .testimonial-section.testimonial-page{
-    padding: 70px 0px 40px 0px;
-  }
-
-  .testimonial-style-two.testimonial-page{
-    padding-bottom: 70px;
-  }
-
-  .testimonial-style-three{
-    padding-top: 0px;
-    padding-bottom: 40px;
-  }
-
-  .faq-page-section{
-    padding: 70px 0px;
-  }
-
-  .gallery-section,
-  .service-page-section{
-    padding: 70px 0px 40px 0px;
-  }
-
-  .service-details{
-    padding: 70px 0px;
-  }
-
-  .service-details-content .content-three .image-box .image{
-    margin-bottom: 30px;
-  }
-
-  .service-details-content h2{
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .shop-page-section{
-    padding: 70px 0px 40px 0px;
-  }
-
-  .shop-details{
-    padding: 70px 0px 40px 0px;
-  }
-
-  .cart-section .othre-content .coupon-box{
-    float: none;
-    max-width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .cart-section .othre-content .update-btn{
-    float: none;
-  }
-
-  .cart-section .othre-content .update-btn button{
-    width: 100%;
-  }
-
-  .cart-section{
-    padding: 70px 0px;
-  }
-
-  .checkout-section{
-    padding: 70px 0px;
-  }
-
-  .sidebar-page-container{
-    padding: 70px 0px;
-  }
-
-  .blog-details-content .content-two .image-box .image{
-    margin-bottom: 30px;
-  }
-
-  .contact-style-two{
-    padding: 70px 0px;
-  }
-
-  .google-map-section{
-    padding-bottom: 70px;
-  }
-
-  .service-details-content .content-three .image-box{
-    margin-bottom: 40px;
-  }
-
-  .chooseus-section .content_block_2 .content-box{
+  .chooseus-section .content_block_2 .content-box,
+  .cta-style-two .content_block_4 .content-box {
     margin-right: 0px;
-  }
-
-  .cta-style-two .content_block_4 .content-box{
     margin-left: 0px;
   }
 
-  .sec-pad-2{
-    padding: 70px 0px !important;
+  .main-footer .footer-top {
+    padding-top: 64px;
   }
 
-  .shop-details .product-discription .tabs-content .customer-review{
-    padding-right: 0px;
-    border-right: none;
-  }
-
-
-}
-
-@media only screen and (max-width: 599px){
-
-  .main-header .outer-box{
-    display: block;
-  }
-
-  .main-header .logo-box .logo{
-    margin: 0 auto;
-  }
-
-  .main-header .nav-right{
-    position: absolute;
-    left: 20px;
-    bottom: -2px;
-    padding: 0px;
-    z-index: 1;
-  }
-
-  .main-header .outer-box{
-    padding: 0px 15px;
-  }
-
-  .main-header .search-box-outer .dropdown-menu{
-    left: 0px !important;
-  }
-
-  .banner-style-three .banner-carousel .content-box{
-    padding-top: 250px;
-  }
-
-  .sortable-masonry .filters .filter-tabs li{
-    margin-bottom: 10px;
-  }
-
-  .error-page-section .inner-box h2 br{
-    display: none;
-  }
-
-  .error-page-section .inner-box h1{
-    font-size: 120px;
-    line-height: 120px;
-  }
-
-  .error-page-section{
-    padding: 100px 0px;
-  }
-
-  .shop-page-section .item-shorting .left-column,
-  .shop-page-section .item-shorting .right-column{
-    float: none;
+  .footer-bottom .bottom-inner {
     display: block;
     text-align: center;
   }
 
-  .shop-page-section .item-shorting .left-column .text{
-    float: none;
+  .about-style-two {
+    padding-top: 60px;
   }
 
-  .shop-page-section .item-shorting .right-column .short-box, 
-  .shop-page-section .item-shorting .right-column .filter-box{
-    float: none;
+  .pt-145,
+  .pt-170 {
+    padding-top: 60px !important;
   }
 
-  .shop-page-section .item-shorting .right-column .short-box{
-    max-width: 275px;
-    margin: 0 auto;
+  .testimonial-style-two {
+    padding: 60px 0px 100px 0px;
   }
 
-  .product-details-content .product-details .addto-cart-box .clearfix li{
-    margin-bottom: 10px;
+  .video-section {
+    padding: 40px 0px;
   }
 
-  .blog-details-content .content-one blockquote{
-    padding-left: 30px;
-    padding-right: 30px;
+  .page-title {
+    padding: 130px 0px 70px 0px;
   }
 
-  .blog-details-content .content-one blockquote .shape{
-    display: none;
+  .page-title h1 {
+    font-size: 34px;
+    line-height: 1.25;
   }
 
-  .blog-details-content .content-one blockquote .icon-box{
-    position: relative;
-    left: 0px;
-    top: 0px;
-    margin-bottom: 15px;
+  .sec-pad-2 {
+    padding: 60px 0px !important;
   }
 
-  .blog-details-content .content-two .image-box{
-    margin-bottom: 40px;
+  .pricing-section .tab-btn-box .tab-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
-  .product-details-content{
-    padding-bottom: 80px;
+  .pricing-section .tab-btn-box .tab-btns .tab-btn {
+    flex: 1 1 auto;
+    margin: 0 !important;
+    padding: 12px 18px;
+    text-align: center;
   }
-
-  .shop-details .product-discription{
-    padding-top: 70px;
-    padding-bottom: 80px;
-  }
-
-  .shop-details .related-product{
-    padding-top: 70px;
-  }
-
-  .shop-details .product-discription .tabs-content .customer-review{
-    padding-bottom: 30px;
-  }
-
 }
 
+/* =====================================================================
+   SMALL MOBILE (<= 599px)
+   ===================================================================== */
+@media only screen and (max-width: 599px) {
+  .main-header .outer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    gap: 8px;
+  }
 
-@media only screen and (max-width: 499px){
+  .main-header .logo-box .logo {
+    margin: 0;
+    max-width: 145px;
+  }
 
-  .mobile-menu{
+  .main-header .logo-box .logo img {
+    max-height: 44px;
+    width: auto;
+  }
+
+  .main-header .nav-right {
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+  }
+
+  .main-header .search-box-outer .search-box-btn,
+  .main-header .cart-box a {
+    min-width: 44px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-header .search-box-outer .dropdown-menu {
+    left: auto !important;
+    right: 0px !important;
+    width: min(300px, calc(100vw - 32px));
+  }
+
+  .banner-style-three .banner-carousel .content-box {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+
+  .mobile-menu {
     width: 100%;
+    max-width: 340px;
   }
 
-  .testimonial-block-one .inner-box{
-    padding-left: 30px;
+  .mobile-menu .navigation li > a {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
   }
 
-  .testimonial-block-one .inner-box .author-thumb{
+  .testimonial-block-one .inner-box {
+    padding: 28px 22px;
+  }
+
+  .testimonial-block-one .inner-box .author-thumb {
     position: relative;
     left: 0px;
     top: 0px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
-  .news-block-one .inner-box{
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .main-header .search-box-outer .dropdown-menu{
-    width: 280px;
-  }
-
-  .about-style-two .video-inner .inner-box{
-    padding: 120px 0px;
-  }
-
-  .content_block_5 .form-inner{
-    padding: 50px 30px;
-  }
-
-  .feature-section.light .title-text h2 br{
-    display: none;
-  }
-
-  .video-section .video-inner .inner-box{
-    padding: 120px 0px;
-  }
-
-  .rtl .testimonial-block-one .inner-box{
-    padding-right: 30px;
-  }
-
-  .rtl .testimonial-block-one .inner-box .author-thumb{
-    right: 0px;
-    text-align: right;
-  }
-
-  .feature-section .title-text h2 br{
-    display: none;
-  }
-
-  .checkout-section .order-info .order-list li .single-box span{
-    float: none;
-  }
-
-  .checkout-section .payment-info .payment-inner{
+  .news-block-one .inner-box {
     padding-left: 20px;
     padding-right: 20px;
   }
 
+  .about-style-two .video-inner .inner-box,
+  .video-section .video-inner .inner-box {
+    padding: 100px 0px;
+  }
+
+  .content_block_5 .form-inner {
+    padding: 36px 20px;
+  }
+
+  .feature-section .title-text h2 br,
+  .feature-section.light .title-text h2 br {
+    display: none;
+  }
 }
 
-
-@media only screen and (max-width: 399px){
-
-  .banner-carousel .content-box .btn-box .theme-btn.btn-one{
-    margin-bottom: 10px;
+/* =====================================================================
+   ERGONOMIC MOBILE VIEWPORT (360px - 414px & <= 440px)
+   Fokus: Zero Overflow, CTA Thumb-Friendly (>= 48px), Keterbacaan 100%
+   ===================================================================== */
+@media only screen and (max-width: 440px) {
+  .auto-container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    max-width: 100% !important;
   }
 
-  .cart-section .othre-content .coupon-box input[type='text']{
-    padding-right: 30px;
-    margin-bottom: 10px;
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
-  .cart-section .othre-content .coupon-box button{
-    position: relative;
-    border-radius: 30px;
+  .row > [class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Tipografi proporsional untuk layar 360px - 414px */
+  .banner-carousel .content-box h2,
+  .banner-style-two .content-box h2,
+  .banner-style-three .content-box h2 {
+    font-size: 26px !important;
+    line-height: 1.28 !important;
+    margin-bottom: 14px;
+  }
+
+  .banner-carousel .content-box p,
+  .banner-style-two .content-box p,
+  .banner-style-three .content-box p {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 22px;
+  }
+
+  .sec-title h2,
+  .feature-section .title-text h2 {
+    font-size: 24px !important;
+    line-height: 1.32 !important;
+  }
+
+  /* Tombol CTA full-width thumb-friendly (>= 48px) */
+  .banner-carousel .content-box .btn-box,
+  .cta-section .btn-box,
+  .cta-style-two .btn-box,
+  .about-section .btn-box,
+  .pricing-table .table-footer,
+  .news-block-one .btn-box,
+  .message-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     width: 100%;
   }
 
+  .banner-carousel .content-box .btn-box a,
+  .cta-section .btn-box a,
+  .cta-style-two .btn-box a,
+  .about-section .btn-box a,
+  .shop-block-one .btn-box a,
+  .pricing-table .table-footer a,
+  .news-block-one .btn-box a,
+  .message-btn button {
+    width: 100% !important;
+    min-height: 50px !important;
+    padding: 12px 18px !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    line-height: 1.3 !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+
+  /* Kartu Produk & Harga 100% Terbaca Jelas */
+  .shop-block-one .inner-box .image-box {
+    height: 200px;
+  }
+
+  .shop-block-one .inner-box .lower-content {
+    padding: 20px 18px 22px !important;
+  }
+
+  .shop-block-one .inner-box .lower-content h4 {
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+  }
+
+  .produk-harga {
+    font-size: 24px !important;
+  }
+
+  /* Kartu Pricing Varian 3 agar tidak terpotong di 360px */
+  .pricing-block-one .pricing-table {
+    padding: 28px 18px !important;
+    overflow: visible !important;
+  }
+
+  .pricing-table .table-header .price-box {
+    position: relative !important;
+    margin: 0 auto 18px !important;
+  }
+
+  .pricing-table .table-header .price-box h3 {
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+  }
+
+  .pricing-table .table-header .title h3 {
+    font-size: 20px !important;
+    line-height: 1.35 !important;
+  }
+
+  .pricing-table .table-content .feature-list li {
+    font-size: 14px !important;
+    line-height: 1.55 !important;
+    padding-left: 24px;
+  }
+
+  /* Footer rapi & tidak menabrak floating button */
+  .main-footer {
+    padding-bottom: 92px;
+  }
+
+  .main-footer .footer-top h2 {
+    font-size: 22px !important;
+    line-height: 1.35 !important;
+  }
+
+  .main-footer .support-box a {
+    font-size: 18px !important;
+    min-height: 48px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .footer-bottom .social-links,
+  .footer-bottom .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  /* Floating buttons ergonomis (tidak menutupi teks) */
+  .floating-wa-pill,
+  .floating-wa-btn {
+    width: 54px !important;
+    height: 54px !important;
+    min-height: 54px !important;
+    bottom: 18px !important;
+    right: 16px !important;
+  }
+
+  #themeToggleBtn,
+  #theme-toggle {
+    width: 48px !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    bottom: 82px !important;
+    right: 19px !important;
+  }
+
+  .scroll-top {
+    bottom: 18px !important;
+    left: 16px !important;
+    right: auto !important;
+    width: 48px !important;
+    height: 48px !important;
+  }
 }
